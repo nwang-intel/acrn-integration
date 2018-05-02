@@ -104,4 +104,4 @@ build_master()
 }
 
 #build_hypervisor_dm $1
-build_master
+build_master $1
