@@ -74,8 +74,8 @@ build_master()
 	rm -rf hv
 	#cp -r /home/jenkins/acnr-hypervisor/* .
 	cd /home/jenkins/mrb/
-	mv /home/jenkins/workspace/acrn-hypervisor master/
-	mv master/acrn-hypervisor master/hv
+	mv /home/jenkins/workspace/$1/acrn-hypervisor master/hv
+	#mv master/acrn-hypervisor master/hv
 	echo "replacing done successfully"
 	cd master	
 	echo "make clean;make all"
