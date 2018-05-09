@@ -39,7 +39,6 @@ char shellcode[] =
 
 void main() {
    unsigned long long  *ret;
-
    ret = (unsigned long long *)&ret + 2;
    (*ret) = (unsigned long long)shellcode;
 }
