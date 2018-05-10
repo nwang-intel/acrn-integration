@@ -27,8 +27,9 @@ void main() {
 		printf("posix_memalign error: %s \n", strerror(m_align));
 		return;
 	}
+	printf("m_aglign address : %p \n", (void *)codestring);
    	strcpy(codestring, shellcode);
-	mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE|PROT_EXEC);
+	mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE);
 	check(codestring);	
    	return;
 }
