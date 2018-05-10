@@ -28,7 +28,7 @@ void main() {
 		return;
 	}
    	strcpy(codestring, shellcode);
-	//mprotect(codestring, CODEBUF, PROT_EXEC|PROT_WRITE|PROT_READ);
+	mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE|PROT_EXEC);
 	check(codestring);	
    	return;
 }
