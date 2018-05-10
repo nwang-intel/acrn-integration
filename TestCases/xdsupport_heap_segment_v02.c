@@ -13,7 +13,7 @@ char *m_heap;
 
 void main() {
 	unsigned long long *ret;
-	m_heap = malloc(CODEBUF);
+        m_heap = malloc(CODEBUF);
 	if (m_heap == NULL) {
 		printf("allocation failed");
 		return;
@@ -21,4 +21,5 @@ void main() {
    	strcpy(m_heap, shellcode);
 	ret = (unsigned long long *)&ret + 2;
 	(*ret) = (unsigned long long)m_heap;
+	return;
 }
