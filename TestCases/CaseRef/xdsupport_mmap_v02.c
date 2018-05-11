@@ -4,6 +4,7 @@
 #include <string.h>
 #include <sys/mman.h>
 #include <stdint.h>
+#include <error.h>
 #define CODEBUF 150
 #define PAGESIZE sysconf(_SC_PAGE_SIZE)
 #define SHELL_FMT "cat /proc/%ld/maps | grep zero"
@@ -15,7 +16,7 @@ char shellcode[] =
 	"\xb8\x3c\x11\x11\x11\x11\x11\x11\x11\x48\xc1\xe0\x38\x48\xc1\xe8\x38\x48\x31\xff\x0f\x05\xe8\xab\xff\xff\xff\x73\x68\x65"
 	"\x6c\x6c\x63\x6f\x64\x65\x20\x65\x78\x65\x63\x75\x74\x65\x64\x0a";
 
-void check(char *codestring) {
+void run(char *codestring) {
 	unsigned long long *ret;
 	ret = (unsigned long long *)&ret + 2;
 	*ret = (unsigned long long)codestring;
@@ -26,15 +27,23 @@ void main() {
 	char cmd[CMD_SIZE];
 	char *codestring = mmap(NULL, CODEBUF, PROT_EXEC|PROT_READ|PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
 	if (codestring == MAP_FAILED) {
-		printf("mmap failed\n");
+		perror("mmap");
 		return;
 	}
 	printf("Before mprotect\n");
         snprintf(cmd, CMD_SIZE, SHELL_FMT, (long)getpid());
 	system(cmd);	
    	strcpy(codestring, shellcode);
-	/*mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE);
-	system(cmd);*/
-	check(codestring);	
+	printf("Try to execute shellcode \n");
+	run(codestring);
+	int r_mprotect = mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE);
+	if (r_mprotect) {
+		printf("mprotect error:%s\n", strerror(r_mprotect));
+		return;
+	}
+	printf("After mprotect\n");
+	system(cmd);
+	printf("Try to execute shellcode \n");
+	run(codestring);	
    	return;
 }
