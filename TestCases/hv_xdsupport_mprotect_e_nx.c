@@ -35,7 +35,11 @@ void main() {
 	snprintf(cmd, CMD_SIZE, SHELL_FMT, (long)getpid());
 	system(cmd); 	
    	strcpy(codestring, shellcode);
-	mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE);
+	int r_mprotect = mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE);
+	if (r_mprotect) {
+		printf("mprotect error: %s \n", strerror(r_mprotect));
+		return;
+	}
 	printf("$ After mprotect\n");
 	system(cmd);
 	printf("$ executing shellcode\n");
