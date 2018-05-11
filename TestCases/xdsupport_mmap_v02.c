@@ -32,15 +32,8 @@ void main() {
 	printf("Before mprotect\n");
         snprintf(cmd, CMD_SIZE, SHELL_FMT, (long)getpid());
 	system(cmd);	
-	/*int m_align = posix_memalign(&codestring, PAGESIZE, CODEBUF);
-	if (m_align) {
-		printf("posix_memalign error: %s \n", strerror(m_align));
-		return;
-	}*/
    	strcpy(codestring, shellcode);
 	/*mprotect(codestring, CODEBUF, PROT_READ|PROT_WRITE);
-	printf("After mprotect\n");
-	snprintf(cmd, CMD_SIZE, SHELL_FMT, (long)getpid());
 	system(cmd);*/
 	check(codestring);	
    	return;
