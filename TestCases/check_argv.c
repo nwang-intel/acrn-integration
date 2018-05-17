@@ -1,6 +1,7 @@
 #include <getopt.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "include/check_argv.h"
 
 
@@ -24,15 +25,18 @@ e_test which_test(char *testType) {
         printf("$ executing mprotect_s_nx test\n");
         return t_mprotect_s_nx;
     }
+    if (!strcmp("data_segment", testType)) {
+        printf("$ executing data_segment test\n");
+        return t_data_segment;
+    }
     return t_argv_error;
 }
 
-
-
 e_test check_argv(int argc, char **argv) {
-    if (argc <= 2) {
+    if (argc < 2) {
         help();
-        return t_argv_error;
+        exit(1);
+        //return t_argv_error;
     }
     int opt;
     e_test test = t_argv_error;

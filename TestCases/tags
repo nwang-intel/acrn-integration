@@ -1,0 +1,102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CFLAG	Makefile	/^CFLAG=-g -Wall -fno-stack-protector $/;"	m
+CHECK_INPUT_H	include/check_argv.h	2;"	d
+CMD_SIZE	CaseRef/hv_xdsupport_mmap_d_nx.c	11;"	d	file:
+CMD_SIZE	CaseRef/hv_xdsupport_mprotect_d_nx.c	11;"	d	file:
+CMD_SIZE	CaseRef/hv_xdsupport_mprotect_e_nx.c	11;"	d	file:
+CMD_SIZE	CaseRef/xdsupport_address_alignment.c	11;"	d	file:
+CMD_SIZE	CaseRef/xdsupport_mmap_v02.c	11;"	d	file:
+CMD_SIZE	hv_xdsupport_execstack_nx.c	9;"	d	file:
+CMD_SIZE	hv_xdsupport_mmap_c_nx.c	10;"	d	file:
+CMD_SIZE	hv_xdsupport_mprotect_c_nx.c	11;"	d	file:
+CMD_SIZE	hv_xdsupport_mprotect_s_nx.c	11;"	d	file:
+CODEBUF	CaseRef/hv_xdsupport_mmap_d_nx.c	9;"	d	file:
+CODEBUF	CaseRef/hv_xdsupport_mprotect_d_nx.c	8;"	d	file:
+CODEBUF	CaseRef/hv_xdsupport_mprotect_e_nx.c	8;"	d	file:
+CODEBUF	CaseRef/xdsupport_address_alignment.c	9;"	d	file:
+CODEBUF	CaseRef/xdsupport_heap_segment_v02.c	4;"	d	file:
+CODEBUF	CaseRef/xdsupport_mmap_v02.c	8;"	d	file:
+CODEBUF	CaseRef/xdsupport_mprotect_segment_v02.c	7;"	d	file:
+CODEBUF	CaseRef/xdsupport_stack_segment.c	31;"	d	file:
+CODEBUF	CaseRef/xdsupport_stack_segment_v02.c	4;"	d	file:
+CODEBUF	hv_xdsupport_execstack_nx.c	7;"	d	file:
+CODEBUF	hv_xdsupport_heap_section.c	4;"	d	file:
+CODEBUF	hv_xdsupport_mmap_c_nx.c	8;"	d	file:
+CODEBUF	hv_xdsupport_mprotect_c_nx.c	9;"	d	file:
+CODEBUF	hv_xdsupport_mprotect_s_nx.c	9;"	d	file:
+CODEBUF	hv_xdsupport_stack_section.c	4;"	d	file:
+DIR_INC	Makefile	/^DIR_INC=include\/$/;"	m
+OBJS	Makefile	/^OBJS=check_argv.o hv_xdsupport_mmap_c_nx.o hv_xdsupport_mprotect_c_nx.o hv_xdsupport_mprotect_s_nx.o hv_xdsupport_data_segment.o$/;"	m
+PAGESIZE	CaseRef/hv_xdsupport_mprotect_d_nx.c	9;"	d	file:
+PAGESIZE	CaseRef/hv_xdsupport_mprotect_e_nx.c	9;"	d	file:
+PAGESIZE	CaseRef/xdsupport_mmap_v02.c	9;"	d	file:
+PAGESIZE	CaseRef/xdsupport_mprotect_segment_v02.c	8;"	d	file:
+SHELL_FMT	CaseRef/hv_xdsupport_mmap_d_nx.c	10;"	d	file:
+SHELL_FMT	CaseRef/hv_xdsupport_mprotect_d_nx.c	10;"	d	file:
+SHELL_FMT	CaseRef/hv_xdsupport_mprotect_e_nx.c	10;"	d	file:
+SHELL_FMT	CaseRef/xdsupport_address_alignment.c	10;"	d	file:
+SHELL_FMT	CaseRef/xdsupport_mmap_v02.c	10;"	d	file:
+SHELL_FMT	hv_xdsupport_execstack_nx.c	8;"	d	file:
+SHELL_FMT	hv_xdsupport_mmap_c_nx.c	9;"	d	file:
+SHELL_FMT	hv_xdsupport_mprotect_c_nx.c	10;"	d	file:
+SHELL_FMT	hv_xdsupport_mprotect_s_nx.c	10;"	d	file:
+XDSUPPORT_TEST_H	include/xdsupport_test.h	2;"	d
+check	CaseRef/xdsupport_mprotect_segment_v02.c	/^void check(char *codestring) {$/;"	f
+check_argv	check_argv.c	/^e_test check_argv(int argc, char **argv) {$/;"	f
+data_segment	hv_xdsupport_data_segment.c	/^void data_segment() {$/;"	f
+e_test	include/check_argv.h	/^typedef enum e_test {$/;"	g
+e_test	include/check_argv.h	/^} e_test; $/;"	t	typeref:enum:e_test
+executable	CaseRef/hv_xdsupport_mmap_d_nx.c	/^bool executable = false;$/;"	v
+executable	hv_xdsupport.c	/^bool executable = 0;$/;"	v
+help	check_argv.c	/^void help() {$/;"	f
+m_heap	CaseRef/xdsupport_heap_segment_v02.c	/^char *m_heap;$/;"	v
+m_heap	hv_xdsupport_heap_section.c	/^char *m_heap;$/;"	v
+main	CaseRef/hv_xdsupport_mmap_d_nx.c	/^int main(int argc, char **argv) {$/;"	f
+main	CaseRef/hv_xdsupport_mprotect_d_nx.c	/^void main() {$/;"	f
+main	CaseRef/hv_xdsupport_mprotect_e_nx.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_address_alignment.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_data_segment.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_data_segment_v02.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_heap_segment_v02.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_mmap_v02.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_mprotect_segment_v02.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_stack_segment.c	/^void main() {$/;"	f
+main	CaseRef/xdsupport_stack_segment_v02.c	/^void main() {$/;"	f
+main	hv_xdsupport.c	/^int main(int argc, char **argv) {$/;"	f
+main	hv_xdsupport_execstack_nx.c	/^void main() {$/;"	f
+main	hv_xdsupport_heap_section.c	/^void main() {$/;"	f
+main	hv_xdsupport_stack_section.c	/^void main() {$/;"	f
+mmap_c_nx	hv_xdsupport_mmap_c_nx.c	/^void mmap_c_nx() {$/;"	f
+mprotect_c_nx	hv_xdsupport_mprotect_c_nx.c	/^void mprotect_c_nx() {$/;"	f
+mprotect_s_nx	hv_xdsupport_mprotect_s_nx.c	/^void mprotect_s_nx() {$/;"	f
+run	CaseRef/hv_xdsupport_mmap_d_nx.c	/^void run(char *codestring) {$/;"	f
+run	CaseRef/hv_xdsupport_mprotect_d_nx.c	/^void run(char *codestring) {$/;"	f
+run	CaseRef/hv_xdsupport_mprotect_e_nx.c	/^void run(char *codestring) {$/;"	f
+run	CaseRef/xdsupport_mmap_v02.c	/^void run(char *codestring) {$/;"	f
+run	hv_xdsupport.c	/^void run(char *codestr) {$/;"	f
+shellcode	CaseRef/hv_xdsupport_mmap_d_nx.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/hv_xdsupport_mprotect_d_nx.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/hv_xdsupport_mprotect_e_nx.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_address_alignment.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_data_segment.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_data_segment_v02.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_heap_segment_v02.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_mmap_v02.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_mprotect_segment_v02.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_stack_segment.c	/^char shellcode[] =$/;"	v
+shellcode	CaseRef/xdsupport_stack_segment_v02.c	/^char shellcode[] =$/;"	v
+shellcode	hv_xdsupport.c	/^char shellcode[] =$/;"	v
+shellcode	hv_xdsupport_execstack_nx.c	/^char shellcode[] =$/;"	v
+shellcode	hv_xdsupport_heap_section.c	/^char shellcode[] =$/;"	v
+shellcode	hv_xdsupport_stack_section.c	/^char shellcode[] =$/;"	v
+t_argv_error	include/check_argv.h	/^    t_argv_error,$/;"	e	enum:e_test
+t_data_segment	include/check_argv.h	/^    t_data_segment,$/;"	e	enum:e_test
+t_mmap_c_nx	include/check_argv.h	/^    t_mmap_c_nx, $/;"	e	enum:e_test
+t_mprotect_c_nx	include/check_argv.h	/^    t_mprotect_c_nx, $/;"	e	enum:e_test
+t_mprotect_s_nx	include/check_argv.h	/^    t_mprotect_s_nx, $/;"	e	enum:e_test
+which_test	check_argv.c	/^e_test which_test(char *testType) {$/;"	f

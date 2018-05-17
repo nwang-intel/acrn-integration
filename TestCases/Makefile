@@ -6,19 +6,19 @@ OBJS=check_argv.o hv_xdsupport_mmap_c_nx.o hv_xdsupport_mprotect_c_nx.o hv_xdsup
 hv_xdsupport: hv_xdsupport.c $(OBJS)
 	gcc $(CFLAG) hv_xdsupport.c $(OBJS) -I $(DIR_INC) -o hv_xdsupport
 
-check_argv.o: 
+check_argv.o: check_argv.c include/check_argv.h
 	gcc $(CFLAG) -I $(DIR_INC) -c check_argv.c
 
-hv_xdsupport_mmap_c_nx.o:
+hv_xdsupport_mmap_c_nx.o: hv_xdsupport_mmap_c_nx.c include/xdsupport_test.h
 	gcc $(CFLAG) -I $(DIR_INC) -c hv_xdsupport_mmap_c_nx.c
 
-hv_xdsupport_mprotect_c_nx.o:
+hv_xdsupport_mprotect_c_nx.o: hv_xdsupport_mprotect_c_nx.c include/xdsupport_test.h 
 	gcc $(CFLAG) -I $(DIR_INC) -c hv_xdsupport_mprotect_c_nx.c
 
-hv_xdsupport_mprotect_s_nx.o:
+hv_xdsupport_mprotect_s_nx.o: hv_xdsupport_mprotect_s_nx.c  include/xdsupport_test.h
 	gcc $(CFLAG) -I $(DIR_INC) -c hv_xdsupport_mprotect_s_nx.c
 
-hv_xdsupport_data_segment.o:
+hv_xdsupport_data_segment.o: hv_xdsupport_data_segment.c include/xdsupport_test.h
 	gcc $(CFLAG) -I $(DIR_INC) -c hv_xdsupport_data_segment.c
 
 clean:
