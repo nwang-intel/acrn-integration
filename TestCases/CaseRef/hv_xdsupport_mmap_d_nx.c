@@ -5,6 +5,7 @@
 #include <sys/mman.h>
 #include <stdint.h>
 #include <error.h>
+#include "include/check_argv.h"
 #define CODEBUF 150
 #define SHELL_FMT "cat /proc/%ld/maps | grep zero"
 #define CMD_SIZE (sizeof(SHELL_FMT) + 20) 
@@ -22,12 +23,22 @@ void run(char *codestring) {
 	return;
 }
 
-void main() {
+bool executable = false;
+
+int main(int argc, char **argv) {
 	char cmd[CMD_SIZE];
-	char *codestring = mmap(NULL, CODEBUF, PROT_EXEC|PROT_READ|PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
-	if (codestring == MAP_FAILED) {
-		perror("mmap");
-		return;
+    char *codestr = NULL;
+    if (check_argv(argc, argv)) {
+       return 0;
+    }
+    if (executable) { 
+	    codestr = (char *)mmap(NULL, CODEBUF, PROT_EXEC|PROT_READ|PROT_WRITE, MAP_SHARED|MAP_ANONYMOUS, -1, 0);
+    } else {
+        codestr = (char *)mmap(NULL, CODEBUF, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_ANONYMOUS, -1, 0);
+    } 
+    if (codestring == MAP_FAILED) {
+	    perror("mmap");
+	    return;
 	}
 	printf("$ nx status\n");
         snprintf(cmd, CMD_SIZE, SHELL_FMT, (long)getpid());
