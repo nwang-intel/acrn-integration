@@ -12,6 +12,7 @@ typedef enum e_test {
     t_argv_error,
 } e_test; 
 
+void help(void);
 e_test check_argv(int, char **);
 
 #endif
