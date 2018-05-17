@@ -3,14 +3,9 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/mman.h>
-#include <stdint.h>
 #include <error.h>
 #include "include/check_argv.h"
 #include "include/xdsupport_test.h"
-#define CODEBUF 150
-#define SHELL_FMT "cat /proc/%ld/maps | grep zero"
-#define SHELL_FMT_ALL "cat /proc/%ld/map"
-#define CMD_SIZE (sizeof(SHELL_FMT) + 20) 
 
 char shellcode[] =
 	"\xeb\x50\x48\xb8\x11\x11\x11\x11\x11\x11\x11\x11\x48\xc1\xe0\x3f\x48\xc1\xe8\x3f\x48\xbf\x11\x11\x11\x11\x11\x11\x11\x11"
@@ -33,9 +28,10 @@ int main(int argc, char **argv) {
         case (t_mmap_c_nx):
             mmap_c_nx();
             break;
-        case (t_mprotect_s_nx):
-            break;
         case (t_mprotect_c_nx):
+            mprotect_c_nx();
+            break;
+        case (t_mprotect_s_nx):
             break;
         default :
             break;
