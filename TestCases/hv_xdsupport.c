@@ -34,6 +34,9 @@ int main(int argc, char **argv) {
         case (t_mprotect_s_nx):
             mprotect_s_nx();
             break;
+        case (t_data_segment):
+            data_segment();
+            break;
         default :
             help();
             break;

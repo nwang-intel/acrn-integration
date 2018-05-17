@@ -10,6 +10,7 @@ typedef enum e_test {
     t_mprotect_c_nx, 
     t_mprotect_s_nx, 
     t_argv_error,
+    t_data_segment,
 } e_test; 
 
 void help(void);

@@ -10,5 +10,6 @@ void run(char *);
 void mmap_c_nx(void);
 void mprotect_c_nx(void);
 void mprotect_s_nx(void);
+void data_segment(void);
 
 #endif 
