@@ -11,5 +11,8 @@ void mmap_c_nx(void);
 void mprotect_c_nx(void);
 void mprotect_s_nx(void);
 void data_segment(void);
+void stack_segment(void);
+void heap_segment(void);
+void print_map(void);
 
 #endif 

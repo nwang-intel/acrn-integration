@@ -36,6 +36,15 @@ int main(int argc, char **argv) {
         case (t_data_segment):
             data_segment();
             break;
+        case (t_stack_segment):
+            stack_segment();
+            break;
+        case (t_heap_segment):
+            heap_segment();
+            break;
+        case (t_print_map):
+            print_map();
+            break;
         default :
             help();
             break;

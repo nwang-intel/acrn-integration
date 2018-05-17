@@ -2,7 +2,6 @@
 #define CHECK_INPUT_H
 
 #include <stdbool.h>
-
 extern bool executable;
 
 typedef enum e_test {
@@ -11,6 +10,9 @@ typedef enum e_test {
     t_mprotect_s_nx, 
     t_argv_error,
     t_data_segment,
+    t_stack_segment,
+    t_heap_segment,
+    t_print_map,
 } e_test; 
 
 void help(void);

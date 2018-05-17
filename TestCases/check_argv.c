@@ -29,6 +29,18 @@ e_test which_test(char *testType) {
         printf("$ executing data_segment test\n");
         return t_data_segment;
     }
+    if (!strcmp("stack_segment", testType)) {
+        printf("$ executing stack_segment test\n");
+        return t_stack_segment;
+    }
+    if (!strcmp("heap_segment", testType)) {
+        printf("$ executing heap_segment test\n");
+        return t_heap_segment;
+    }
+    if (!strcmp("print_map", testType)) {
+        printf("$ executing print_map test\n");
+        return t_print_map;
+    }
     return t_argv_error;
 }
 
