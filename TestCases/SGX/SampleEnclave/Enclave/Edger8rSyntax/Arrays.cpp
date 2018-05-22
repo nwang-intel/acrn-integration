@@ -34,27 +34,30 @@
 #include "sgx_trts.h"
 #include "../Enclave.h"
 #include "Enclave_t.h"
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define END "\033[0m"
 
 /* ecall_array_user_check:
  *   [user_check] parameter does not perfrom copy operations.
  */
 void ecall_array_user_check(int arr[4])
 {
-    printf("\033[32m+\033[0m [user_check] ecall_array_user_check\n");   
-    printf("    \033[32m+\033[0m checking array location\n"); 
+    printf("%s+%s [user_check] ecall_array_user_check\n", GREEN, END);   
+    printf("    %s+%s checking array location\n", GREEN, END); 
     if (sgx_is_outside_enclave(arr, 4 * sizeof(int)) != 1) {
-        printf("    \033[31m-\033[0m FAIL: array is not outside enclave\n");
+        printf("    %s  FAIL%s: array is not outside enclave\n", RED, END);
         abort();
     }
-    printf("    \033[32m+\033[0m array location check \033[32mPASS\033[0m\n");
+    printf("      array location check %sPASS%s\n", GREEN, END);
     
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
-        printf("    \033[32m+\033[0m modifing memory outside arr[%d]\n", i);
+        printf("    %s+%s modifing memory outside arr[%d]\n", GREEN, END, i);
         arr[i] = 3 - i;
         assert(arr[i] == 3 - i);
     }
-    printf("\033[32m+\033[0m [user_check] ecall_array_user_check \033[32mPASS\033[0m\n");
+    printf("  [user_check] ecall_array_user_check %sPASS%s\n", GREEN, END);
 }
 
 /* ecall_array_in:
