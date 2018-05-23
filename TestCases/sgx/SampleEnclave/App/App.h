@@ -58,6 +58,7 @@ extern sgx_enclave_id_t global_eid;    /* global enclave id */
 extern "C" {
 #endif
 
+void get_error_message(sgx_status_t, const char *); 
 void edger8r_array_attributes(void);
 void edger8r_type_attributes(void);
 void edger8r_pointer_attributes(void);

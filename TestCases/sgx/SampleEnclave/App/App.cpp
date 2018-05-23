@@ -52,7 +52,10 @@ typedef struct _sgx_errlist_t {
 } sgx_errlist_t;
 
 /* Error code returned by sgx_create_enclave */
-static sgx_errlist_t sgx_errlist[] = {
+/* restricted to the file locally */
+//static sgx_errlist_t sgx_errlist[] = {
+/* expose the errlist */
+sgx_errlist_t sgx_errlist[] = {    
     {
         SGX_ERROR_UNEXPECTED,
         "Unexpected error occurred.",
@@ -129,6 +132,18 @@ static sgx_errlist_t sgx_errlist[] = {
         NULL
     },
 };
+
+void get_error_message(sgx_status_t ret, const char *str) {
+    size_t idx = 0;
+    size_t ttl = sizeof(sgx_errlist)/sizeof(sgx_errlist[0]);
+
+    for (idx = 0; idx < ttl; idx++) {
+        if (ret == sgx_errlist[idx].err) {
+            str = sgx_errlist[idx].msg;
+            return;
+        }
+    }
+}
 
 /* Check error conditions for loading enclave */
 void print_error_message(sgx_status_t ret)

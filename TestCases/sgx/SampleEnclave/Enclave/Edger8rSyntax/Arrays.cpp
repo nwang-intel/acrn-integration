@@ -43,21 +43,19 @@
  */
 void ecall_array_user_check(int arr[4])
 {
-    printf("%s+%s [user_check] ecall_array_user_check\n", GREEN, END);   
-    printf("    %s+%s checking array location\n", GREEN, END); 
+    printf("\t%s+%s checking array location\n", GREEN, END); 
     if (sgx_is_outside_enclave(arr, 4 * sizeof(int)) != 1) {
-        printf("    %s  FAIL%s: array is not outside enclave\n", RED, END);
+        printf("\t%s  FAIL%s: array is not outside enclave\n", RED, END);
         abort();
     }
-    printf("      array location check %sPASS%s\n", GREEN, END);
+    printf("\t  array location check %sPASS%s\n", GREEN, END);
     
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
-        printf("    %s+%s modifing memory outside arr[%d]\n", GREEN, END, i);
+        printf("\t%s+%s modifing memory outside arr[%d]\n", GREEN, END, i);
         arr[i] = 3 - i;
         assert(arr[i] == 3 - i);
     }
-    printf("  [user_check] ecall_array_user_check %sPASS%s\n", GREEN, END);
 }
 
 /* ecall_array_in:
@@ -66,8 +64,16 @@ void ecall_array_user_check(int arr[4])
  */
 void ecall_array_in(int arr[4])
 {
+    printf("\t%s+%s checking array location\n", GREEN, END);
+    if (sgx_is_within_enclave(arr, 4 * sizeof(int)) != 1) {
+        printf("\t%s  FAIL%s: array is not within enclave\n", RED, END);
+        abort();
+    }
+    printf("\t  array location check %sPASS%s\n", GREEN, END);
+
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
+        printf("\t%s+%s modifing memory internal arr[%d]\n", GREEN, END, i);
         arr[i] = (3 - i);
     }
 }
@@ -78,9 +84,16 @@ void ecall_array_in(int arr[4])
  */
 void ecall_array_out(int arr[4])
 {
+    printf("\t%s+%s checking array location\n", GREEN, END);
+    if (sgx_is_within_enclave(arr, 4 * sizeof(int)) != 1) {
+        printf("\t%s  FAIL%s: array is not within enclave\n", RED, END);
+        abort();
+    }
+    printf("\t  array location check %sPASS%s\n", GREEN, END);
     for (int i = 0; i < 4; i++) {
         /* arr is not copied from App */
         assert(arr[i] == 0);
+        printf("\t%s+%s modifing memory internal arr[%d]\n", GREEN, END, i);
         arr[i] = (3 - i);
     }
 }
@@ -91,8 +104,15 @@ void ecall_array_out(int arr[4])
  */
 void ecall_array_in_out(int arr[4])
 {
+    printf("\t%s+%s checking array location\n", GREEN, END);
+    if (sgx_is_within_enclave(arr, 10 * sizeof(int)) != 1) {
+        printf("\t%s  FAIL%s: array is not within enclave\n", RED, END);
+        abort();
+    }
+    printf("\t  array location check %sPASS%s\n", GREEN, END);
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
+        printf("\t%s+%s modifing memory internal arr[%d]\n", GREEN, END, i);
         arr[i] = (3 - i);
     }
 }
@@ -102,12 +122,22 @@ void ecall_array_in_out(int arr[4])
  */
 void ecall_array_isary(array_t arr)
 {
-    if (sgx_is_outside_enclave(arr, sizeof(array_t)) != 1)
+    printf("\t%s+%s checking array location\n", GREEN, END);
+    if (sgx_is_outside_enclave(arr, sizeof(array_t)) != 1) {
+        printf("\t%s FAIL%s: array is not outside enclave\n", RED, END);
         abort();
-
+    }
+    printf("\t  array location check %sPASS%s\n", GREEN, END);
     int n = sizeof(array_t)/sizeof(arr[0]);
+    printf("\t%s+%s checking array size\n", GREEN, END);
+    if (10 != n) {
+        printf("\t%s FAIL%s: array size is not 10\n", RED, END);
+        abort();
+    }
+    printf("\t  array size check %sPASS%s\n", GREEN, END);
     for (int i = 0; i < n; i++) {
         assert(arr[i] == i);
+        printf("\t%s+%s modifing memory outside enclave\n", GREEN, END);
         arr[i] = (n - 1 - i);
     }
 }
