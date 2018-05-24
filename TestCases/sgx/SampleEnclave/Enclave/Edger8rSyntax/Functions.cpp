@@ -41,7 +41,7 @@
 /* ecall_function_calling_convs:
  *   memccpy is defined in system C library.
  */
-void ecall_function_calling_convs(void)
+int ecall_function_calling_convs(void)
 {
     sgx_status_t ret = SGX_ERROR_UNEXPECTED;
 
@@ -57,7 +57,7 @@ void ecall_function_calling_convs(void)
         abort();
     assert(memcmp(s1, s2, strlen(s1)) == 0);
 
-    return;
+    return 2018; 
 }
 
 /* ecall_function_public:

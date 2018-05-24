@@ -43,7 +43,7 @@ enclave {
 
     trusted {
 
-        public void ecall_function_calling_convs(void);
+        public int ecall_function_calling_convs(void);
         
         /*
          * [public]:

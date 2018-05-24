@@ -32,6 +32,9 @@
 
 #include "../App.h"
 #include "Enclave_u.h"
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define END "\033[0m"
 
 /* No need to implement memccpy here! */
 
@@ -42,10 +45,18 @@
 void edger8r_function_attributes(void)
 {
     sgx_status_t ret = SGX_ERROR_UNEXPECTED;
+    int retval = 0; 
+    bool exececall = true;
+    bool execd = true;
 
-    ret = ecall_function_calling_convs(global_eid);
-    if (ret != SGX_SUCCESS)
-        abort();
+    printf("%s+%s [public] ecall_function_calling_covns\n", GREEN, END); 
+    ret = ecall_function_calling_convs(global_eid, &retval);
+    if (ret != SGX_SUCCESS || retval != 2018) {
+        log_error(&exececall, ret, "[public] ecall_function_calling_convs");
+    } else {
+    
+    }
+        
     
     ret = ecall_function_public(global_eid);
     if (ret != SGX_SUCCESS)
