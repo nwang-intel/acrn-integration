@@ -48,7 +48,7 @@ void ecall_array_user_check(int arr[4])
         printf("\t%s  FAIL%s: array is not outside enclave\n", RED, END);
         abort();
     }
-    printf("\t  array location check %sPASS%s\n", GREEN, END);
+    printf("\t  %sPASS%s\n", GREEN, END);
     
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
@@ -69,7 +69,7 @@ void ecall_array_in(int arr[4])
         printf("\t%s  FAIL%s: array is not within enclave\n", RED, END);
         abort();
     }
-    printf("\t  array location check %sPASS%s\n", GREEN, END);
+    printf("\t  %sPASS%s\n", GREEN, END);
 
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
@@ -89,7 +89,7 @@ void ecall_array_out(int arr[4])
         printf("\t%s  FAIL%s: array is not within enclave\n", RED, END);
         abort();
     }
-    printf("\t  array location check %sPASS%s\n", GREEN, END);
+    printf("\t  %sPASS%s\n", GREEN, END);
     for (int i = 0; i < 4; i++) {
         /* arr is not copied from App */
         assert(arr[i] == 0);
@@ -109,7 +109,7 @@ void ecall_array_in_out(int arr[4])
         printf("\t%s  FAIL%s: array is not within enclave\n", RED, END);
         abort();
     }
-    printf("\t  array location check %sPASS%s\n", GREEN, END);
+    printf("\t  %sPASS%s\n", GREEN, END);
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
         printf("\t%s+%s modifing memory internal arr[%d]\n", GREEN, END, i);
@@ -127,14 +127,14 @@ void ecall_array_isary(array_t arr)
         printf("\t%s FAIL%s: array is not outside enclave\n", RED, END);
         abort();
     }
-    printf("\t  array location check %sPASS%s\n", GREEN, END);
+    printf("\t  %sPASS%s\n", GREEN, END);
     int n = sizeof(array_t)/sizeof(arr[0]);
     printf("\t%s+%s checking array size\n", GREEN, END);
     if (10 != n) {
         printf("\t%s FAIL%s: array size is not 10\n", RED, END);
         abort();
     }
-    printf("\t  array size check %sPASS%s\n", GREEN, END);
+    printf("\t  %sPASS%s\n", GREEN, END);
     for (int i = 0; i < n; i++) {
         assert(arr[i] == i);
         printf("\t%s+%s modifing memory outside enclave\n", GREEN, END);

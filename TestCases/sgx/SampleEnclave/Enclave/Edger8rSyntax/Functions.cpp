@@ -37,6 +37,9 @@
 
 #include "../Enclave.h"
 #include "Enclave_t.h"
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define END "\033[0m"
 
 /* ecall_function_calling_convs:
  *   memccpy is defined in system C library.
@@ -49,14 +52,19 @@ int ecall_function_calling_convs(void)
     char s2[] = "0987654321";
 
     char buf[BUFSIZ] = {'\0'};
+    printf("\t%s+%s calling trusted function\n", GREEN, END);
     memcpy(buf, s1, strlen(s1));
+    printf("\t  %sPASS%s\n", GREEN, END);
 
+    printf("\t%s+%s calling untrusted imported function\n", GREEN, END); 
     ret = memccpy(NULL, s1, s2, '\0', strlen(s1));
     
-    if (ret != SGX_SUCCESS)
+    if (ret != SGX_SUCCESS) {
+        printf("\t  %sFAIL%s : untrusted imported function call\n", RED, END); 
         abort();
-    assert(memcmp(s1, s2, strlen(s1)) == 0);
-
+    }
+    //assert(memcmp(s1, s2, strlen(s1)) == 0);
+    printf("\t  %sPASS%s\n", GREEN, END); 
     return 2018; 
 }
 

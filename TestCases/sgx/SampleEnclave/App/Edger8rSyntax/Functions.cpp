@@ -49,15 +49,14 @@ void edger8r_function_attributes(void)
     bool exececall = true;
     bool execd = true;
 
-    printf("%s+%s [public] ecall_function_calling_covns\n", GREEN, END); 
+    printf("%s+%s [public] ecall_function_calling_convs\n", GREEN, END); 
     ret = ecall_function_calling_convs(global_eid, &retval);
     if (ret != SGX_SUCCESS || retval != 2018) {
         log_error(&exececall, ret, "[public] ecall_function_calling_convs");
     } else {
-    
+        printf("  %sPASS%s\n", GREEN, END);
     }
         
-    
     ret = ecall_function_public(global_eid);
     if (ret != SGX_SUCCESS)
         abort();

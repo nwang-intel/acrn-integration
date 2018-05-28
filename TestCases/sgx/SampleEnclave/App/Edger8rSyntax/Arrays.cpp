@@ -74,12 +74,12 @@ void edger8r_array_attributes(void)
             }
         }
         if (execd) {
-            printf("\t  array value check %sPASS%s\n", GREEN, END);
-            printf("  [user_check] ecall_array_user_check %sPASS%s\n", GREEN, END);
+            printf("\t  %sPASS%s\n", GREEN, END);
+            printf("  %sPASS%s\n", GREEN, END);
 
         } else {
             printf("\t  array value check %sFAIL%s\n", RED, END);
-            printf("  [user_check] ecall_array_user_check %sPASS%s\n", RED, END);
+            printf("  [user_check] ecall_array_user_check %sFAIL%s\n", RED, END);
         }
     }
     exececall = true;
@@ -105,8 +105,8 @@ void edger8r_array_attributes(void)
             }
         }
         if (execd) {
-            printf("\t  array value check %sPASS%s\n", GREEN, END);
-            printf("  [in] ecall_array_in %sPASS%s\n", GREEN, END);
+            printf("\t  %sPASS%s\n", GREEN, END);
+            printf("  %sPASS%s\n", GREEN, END);
         } else {
             printf("\t  array value check %sFAIL%s\n", RED, END);
             printf("  [in] ecall_array_in %sFAIL%s\n", RED, END);
@@ -135,8 +135,8 @@ void edger8r_array_attributes(void)
             }
         } 
         if (execd) {
-            printf("\t  array value check %sPASS%s\n", GREEN, END);
-            printf("  [out] ecall_array_out %sPASS%s\n", GREEN, END);
+            printf("\t  %sPASS%s\n", GREEN, END);
+            printf("  %sPASS%s\n", GREEN, END);
         } else {
             printf("\t  array value check %sFAIL%s\n", RED, END);
             printf("  [out] ecall_array_out %sFAIL%s\n", RED, END);
@@ -165,8 +165,8 @@ void edger8r_array_attributes(void)
             }
         }
         if (execd) {
-            printf("\t  array value check %sPASS%s\n", GREEN, END);
-            printf("  [in, out] ecall_array_in_out %sPASS%s\n", GREEN, END);
+            printf("\t  %sPASS%s\n", GREEN, END);
+            printf("  %sPASS%s\n", GREEN, END);
         } else {
             printf("\t  array value check %sFAIL%s\n", RED, END);
             printf("  [in, out] ecall_array_in_out %sFAIL%s\n", RED, END);
@@ -196,8 +196,8 @@ void edger8r_array_attributes(void)
             }
         }
         if (execd) {
-            printf("\t  array value check %sPASS%s\n", GREEN, END);
-            printf("  [user_check, isary] ecall_array_isary %sPASS%s\n", GREEN, END);
+            printf("\t  %sPASS%s\n", GREEN, END);
+            printf("  %sPASS%s\n", GREEN, END);
         } else {
             printf("\t  array value check %sFAIL%s\n", RED, END);
             printf("  [user_check, isary] ecall_array_isary %sFAIL%s\n", RED, END);

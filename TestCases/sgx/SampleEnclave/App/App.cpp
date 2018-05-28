@@ -41,6 +41,9 @@
 #include "sgx_urts.h"
 #include "App.h"
 #include "Enclave_u.h"
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define END "\033[0m"
 
 /* Global EID shared by multiple threads */
 sgx_enclave_id_t global_eid = 0;
@@ -180,6 +183,7 @@ int initialize_enclave(void)
      *         if there is no token, then create a new one.
      */
     /* try to get the token saved in $HOME */
+    printf("%s+%s Creating Enclave\n", GREEN, END);
     const char *home_dir = getpwuid(getuid())->pw_dir;
     
     if (home_dir != NULL && 
@@ -252,10 +256,12 @@ int SGX_CDECL main(int argc, char *argv[])
 
     /* Initialize the enclave */
     if(initialize_enclave() < 0){
+        printf("%s  FAIL%s : Creation failed\n", RED, END);
         printf("Enter a character before exit ...\n");
         getchar();
         return -1; 
     }
+    printf("  Enclave Creation %sPASS%s\n", GREEN, END);
  
     /* Utilize edger8r attributes */
     edger8r_array_attributes();
