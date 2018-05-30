@@ -1,0 +1,90 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+10	stream.f	/^   10 CONTINUE$/;"	l	program:stream	file:
+10	stream.f	/^   10 DO 20 j = 1,30$/;"	l	function:realsize	file:
+10	stream.f	/^   10 t2 = mysecond()$/;"	l	function:checktick	file:
+100	stream.f	/^  100 CONTINUE$/;"	l	program:stream	file:
+110	stream.f	/^  110 CONTINUE$/;"	l	subroutine:checksums	file:
+20	stream.f	/^   20 CONTINUE$/;"	l	function:checktick	file:
+20	stream.f	/^   20 CONTINUE$/;"	l	function:realsize	file:
+20	stream.f	/^   20 CONTINUE$/;"	l	program:stream	file:
+30	stream.f	/^   30     CONTINUE$/;"	l	program:stream	file:
+30	stream.f	/^   30 CONTINUE$/;"	l	function:realsize	file:
+40	stream.f	/^   40     CONTINUE$/;"	l	program:stream	file:
+40	stream.f	/^   40 WRITE (*,FMT='(a)')$/;"	l	function:realsize	file:
+50	stream.f	/^   50     CONTINUE$/;"	l	program:stream	file:
+50	stream.f	/^   50 PRINT *,'Hmmmm.  I am unable to determine the size.'$/;"	l	function:realsize	file:
+60	stream.f	/^   60     CONTINUE$/;"	l	program:stream	file:
+70	stream.f	/^   70 CONTINUE$/;"	l	program:stream	file:
+80	stream.f	/^   80     CONTINUE$/;"	l	program:stream	file:
+90	stream.f	/^   90 CONTINUE$/;"	l	program:stream	file:
+9000	stream.f	/^ 9000 FORMAT (1x,a,i6,a)$/;"	l	program:stream	file:
+9010	stream.f	/^ 9010 FORMAT (1x,a,i10)$/;"	l	program:stream	file:
+9020	stream.f	/^ 9020 FORMAT (1x,a,i4,a)$/;"	l	program:stream	file:
+9030	stream.f	/^ 9030 FORMAT (1x,a,i3,a,a)$/;"	l	program:stream	file:
+9040	stream.f	/^ 9040 FORMAT ('Function',5x,'Rate (MB\/s)  Avg time   Min time  Max time'$/;"	l	program:stream	file:
+9050	stream.f	/^ 9050 FORMAT (a,4 (f10.4,2x))$/;"	l	program:stream	file:
+CC	Makefile	/^CC = gcc-4.9$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O2 -fopenmp$/;"	m
+DSTREAM_ARRAY_SIZE	Makefile	/^	icc -O3 -xCORE-AVX2 -ffreestanding -qopenmp -DSTREAM_ARRAY_SIZE=80000000 -DNTIMES=20 stream.c -o stream.omp.AVX2.80M.20x.icc$/;"	m
+FC	Makefile	/^FC = gfortran-4.9$/;"	m
+FFLAGS	Makefile	/^FFLAGS = -O2 -fopenmp$/;"	m
+HLINE	stream.c	166;"	d	file:
+M	stream.c	381;"	d	file:
+MAX	stream.c	172;"	d	file:
+MIN	stream.c	169;"	d	file:
+NTIMES	stream.c	108;"	d	file:
+NTIMES	stream.c	112;"	d	file:
+OFFSET	stream.c	124;"	d	file:
+STREAM_ARRAY_SIZE	stream.c	94;"	d	file:
+STREAM_TYPE	stream.c	176;"	d	file:
+a	stream.c	/^static STREAM_TYPE	a[STREAM_ARRAY_SIZE+OFFSET],$/;"	v	file:
+a	stream.f	/^      DOUBLE PRECISION a(/;"	v	program:stream
+abs	stream.c	431;"	d	file:
+avgtime	stream.c	/^static double	avgtime[4] = {0}, maxtime[4] = {0},$/;"	v	file:
+avgtime	stream.f	/^      DOUBLE PRECISION maxtime(4),mintime(4),avgtime(/;"	v	program:stream
+b	stream.c	/^			b[STREAM_ARRAY_SIZE+OFFSET],$/;"	v	file:
+b	stream.f	/^      DOUBLE PRECISION a(ndim),b(/;"	v	program:stream
+bytes	stream.c	/^static double	bytes[4] = {$/;"	v	file:
+bytes	stream.f	/^      INTEGER bytes(/;"	v	program:stream
+c	stream.c	/^			c[STREAM_ARRAY_SIZE+OFFSET];$/;"	v	file:
+c	stream.f	/^      DOUBLE PRECISION a(ndim),b(ndim),c(/;"	v	program:stream
+checkSTREAMresults	stream.c	/^void checkSTREAMresults ()$/;"	f
+checksums	stream.f	/^      SUBROUTINE checksums(/;"	s
+checktick	stream.c	/^checktick()$/;"	f
+checktick	stream.f	/^      INTEGER FUNCTION checktick(/;"	f
+checktick	stream.f	/^      INTEGER checktick,/;"	v	program:stream
+confuse	stream.f	/^      SUBROUTINE confuse(/;"	s
+j	stream.f	/^      INTEGER j,/;"	v	program:stream
+k	stream.f	/^      INTEGER j,k,/;"	v	program:stream
+label	stream.c	/^static char	*label[4] = {"Copy:      ", "Scale:     ",$/;"	v	file:
+label	stream.f	/^      CHARACTER label(/;"	v	program:stream
+main	stream.c	/^main()$/;"	f
+maxtime	stream.c	/^static double	avgtime[4] = {0}, maxtime[4] = {0},$/;"	v	file:
+maxtime	stream.f	/^      DOUBLE PRECISION maxtime(/;"	v	program:stream
+mintime	stream.c	/^		mintime[4] = {FLT_MAX,FLT_MAX,FLT_MAX,FLT_MAX};$/;"	v	file:
+mintime	stream.f	/^      DOUBLE PRECISION maxtime(4),mintime(/;"	v	program:stream
+mysecond	mysecond.c	/^double mysecond()$/;"	f
+mysecond	stream.c	/^double mysecond()$/;"	f
+mysecond	stream.f	/^      DOUBLE PRECISION mysecond$/;"	v	program:stream
+mysecond_	mysecond.c	/^double mysecond_() {return mysecond();}$/;"	f
+n	stream.f	/^      INTEGER n,/;"	v	program:stream
+nbpw	stream.f	/^      INTEGER j,k,nbpw,/;"	v	program:stream
+ndim	stream.f	/^      INTEGER n,offset,ndim,/;"	v	program:stream
+ntimes	stream.f	/^      INTEGER n,offset,ndim,ntimes$/;"	v	program:stream
+offset	stream.f	/^      INTEGER n,offset,/;"	v	program:stream
+quantum	stream.f	/^      INTEGER j,k,nbpw,quantum$/;"	v	program:stream
+realsize	stream.f	/^      INTEGER FUNCTION realsize(/;"	f
+realsize	stream.f	/^      INTEGER checktick,realsize$/;"	v	program:stream
+scalar	stream.f	/^      DOUBLE PRECISION scalar,/;"	v	program:stream
+stream	stream.f	/^      PROGRAM stream$/;"	p
+t	stream.f	/^      DOUBLE PRECISION scalar,t$/;"	v	program:stream
+times	stream.f	/^      DOUBLE PRECISION maxtime(4),mintime(4),avgtime(4),$/;"	v	program:stream
+tuned_STREAM_Add	stream.c	/^void tuned_STREAM_Add()$/;"	f
+tuned_STREAM_Copy	stream.c	/^void tuned_STREAM_Copy()$/;"	f
+tuned_STREAM_Scale	stream.c	/^void tuned_STREAM_Scale(STREAM_TYPE scalar)$/;"	f
+tuned_STREAM_Triad	stream.c	/^void tuned_STREAM_Triad(STREAM_TYPE scalar)$/;"	f
