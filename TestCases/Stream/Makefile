@@ -12,7 +12,7 @@ stream_f.exe: stream.f mysecond.o
 	$(FC) $(FFLAGS) stream.o mysecond.o -o stream_f.exe
 
 stream_c.exe: stream.c
-	$(CC) $(CFLAGS) stream.c -o stream_c.exe -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=1000
+	$(CC) $(CFLAGS) stream.c -o stream_c.exe -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=100
 
 clean:
 	rm -f stream_f.exe stream_c.exe *.o
