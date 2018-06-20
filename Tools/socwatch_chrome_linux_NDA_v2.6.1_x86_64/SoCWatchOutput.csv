@@ -1,0 +1,204 @@
+
+--------------------------------------------------------------------------
+** FOR USE UNDER NDA ONLY **
+Intel(R) SoC Watch for Linux* OS Version 2.6.1 [May  9 2018]
+Copyright (c) 2018 Intel Corporation. All Rights Reserved.
+Platform power analysis tool for use with Intel processors/chipsets/platforms.
+*Other names and brands may be claimed as the property of others. 
+--------------------------------------------------------------------------
+
+Command line options: -f cpu -t 10 
+
+Data Collection Started: 2018-06-01 15:45:18 GMT
+Collection duration (sec):10.011
+
+CPU: Kaby Lake
+CPU ID (family.model.stepping): 0x6.0x9e.0x9
+Platform ID: 0b000
+GPU Device ID: 0x5912
+PCH: Kaby Lake PCH-H (KBP-H)
+EDRAM Present: No 
+Total # of packages: 1 
+Total # of cores: 4 
+Total # of logical processors: 8
+
+
+Note: Hardware Controlled Performance (HWP) States is enabled in autonomous mode.
+
+===============
+Package C-State
+===============
+
+Package C-State Summary: Residency (Percentage and Time)
+C-State, Package_0 Residency (%), Package_0 Residency (msec)
+-------, -----------------------, --------------------------
+PC0    , 17.17                  , 1718.66                   
+PC2    , 82.83                  , 8291.97                   
+PC3    , 0.00                   , 0.00                      
+PC6    , 0.00                   , 0.00                      
+PC7    , 0.00                   , 0.00                      
+PC8    , 0.00                   , 0.00                      
+PC9    , 0.00                   , 0.00                      
+PC10   , 0.00                   , 0.00                      
+
+Package C-State Summary: Total Samples Received
+Package  , Total # of samples, Min sampling interval (msec), Max sampling interval (msec), Avg sampling interval (msec)
+-------  , ------------------, ----------------------------, ----------------------------, ----------------------------
+Package_0, 1                 , 10010.63                    , 10010.63                    , 10010.63                    
+
+============
+Core C-State
+============
+
+Core C-State Summary: Residency (Percentage and Time)
+C-State, Core_0 Residency (%), Core_1 Residency (%), Core_2 Residency (%), Core_3 Residency (%), Core_0 Residency (msec), Core_1 Residency (msec), Core_2 Residency (msec), Core_3 Residency (msec)
+-------, --------------------, --------------------, --------------------, --------------------, -----------------------, -----------------------, -----------------------, -----------------------
+CC0    , 2.53                , 1.24                , 1.48                , 1.93                , 253.33                 , 123.79                 , 147.82                 , 192.72                 
+CC1    , 3.93                , 1.33                , 2.59                , 8.85                , 393.52                 , 133.01                 , 259.05                 , 886.06                 
+CC3    , 0.05                , 0.01                , 0.01                , 0.03                , 5.38                   , 1.41                   , 1.46                   , 3.38                   
+CC6    , 1.04                , 0.18                , 0.24                , 0.49                , 103.69                 , 17.71                  , 23.99                  , 48.92                  
+CC7    , 92.45               , 97.24               , 95.68               , 88.70               , 9254.65                , 9734.66                , 9578.26                , 8879.47                
+
+Core C-State Summary: Total Samples Received
+Core  , Total # of samples, Min sampling interval (msec), Max sampling interval (msec), Avg sampling interval (msec)
+----  , ------------------, ----------------------------, ----------------------------, ----------------------------
+Core_0, 1                 , 10010.58                    , 10010.58                    , 10010.58                    
+Core_1, 1                 , 10010.58                    , 10010.58                    , 10010.58                    
+Core_2, 1                 , 10010.58                    , 10010.58                    , 10010.58                    
+Core_3, 1                 , 10010.55                    , 10010.55                    , 10010.55                    
+
+======================
+CPU Throttling Reasons
+======================
+
+CPU Throttling Reasons Summary - Sampled: Counts
+                 , Not Reason, Reason
+                 , ----------, ------
+PROCHOT          , 102       , 0     
+THERMAL          , 102       , 0     
+RSR-LIMIT        , 102       , 0     
+RATL             , 102       , 0     
+VR-THERMAL-ALERT , 102       , 0     
+VR-TDC           , 102       , 0     
+OTHER            , 102       , 0     
+PBM-PL1          , 102       , 0     
+PBM-PL2          , 102       , 0     
+MAX-TURBO-LIMIT  , 102       , 0     
+TURBO-ATTENUATION, 102       , 0     
+
+======================
+Core P-State/Frequency
+======================
+
+Core P-State/Frequency Summary: Residency (Percentage and Time)
+P-State , Frequency (MHz), Core_0 Residency (%), Core_1 Residency (%), Core_2 Residency (%), Core_3 Residency (%), Core_0 Residency (msec), Core_1 Residency (msec), Core_2 Residency (msec), Core_3 Residency (msec)
+------- , ---------------, --------------------, --------------------, --------------------, --------------------, -----------------------, -----------------------, -----------------------, -----------------------
+P0      , 4101 -- 4200   , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P0      , 4001 -- 4100   , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P0      , 3901 -- 4000   , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P0      , 3801 -- 3900   , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P0      , 3701 -- 3800   , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P0      , 3601 -- 3700   , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P1      , 3600           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P2      , 3500           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P3      , 3400           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P4      , 3300           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P5      , 3200           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P6      , 3100           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P7      , 3000           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P8      , 2900           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P9      , 2800           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P10     , 2700           , 0.00                , 0.00                , 0.00                , 0.02                , 0.00                   , 0.00                   , 0.00                   , 2.25                   
+P11     , 2600           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P12     , 2500           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P13     , 2400           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P14     , 2300           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P15     , 2200           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P16     , 2100           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P17     , 2000           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P18     , 1900           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P19     , 1800           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P20     , 1700           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P21     , 1600           , 0.21                , 0.12                , 0.12                , 0.57                , 21.08                  , 11.72                  , 12.50                  , 57.44                  
+P22     , 1500           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P23     , 1400           , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P24     , 1300           , 0.00                , 0.00                , 0.00                , 0.07                , 0.00                   , 0.00                   , 0.00                   , 6.80                   
+P25     , 1200           , 0.00                , 0.00                , 0.00                , 0.02                , 0.00                   , 0.00                   , 0.00                   , 2.34                   
+P26     , 1100           , 1.32                , 0.83                , 0.93                , 0.81                , 132.05                 , 83.48                  , 93.25                  , 81.49                  
+P27     , 1000           , 1.00                , 0.29                , 0.38                , 0.43                , 99.68                  , 28.62                  , 38.51                  , 42.60                  
+P28     , 900            , 0.00                , 0.00                , 0.00                , 0.00                , 0.00                   , 0.00                   , 0.00                   , 0.00                   
+P29     , 800            , 0.00                , 0.00                , 0.04                , 0.00                , 0.00                   , 0.00                   , 3.58                   , 0.00                   
+CPU Idle, 0              , 97.47               , 98.76               , 98.52               , 98.07               , 9757.80                , 9886.79                , 9862.77                , 9817.68                
+
+Core P-State/Frequency Summary: Total Samples Received
+Core ID, Total # of samples, Min sampling interval (msec), Max sampling interval (msec), Avg sampling interval (msec)
+-------, ------------------, ----------------------------, ----------------------------, ----------------------------
+Core_0 , 16                , 0.00                        , 2511.67                     , 627.03                      
+Core_1 , 21                , 0.01                        , 1807.71                     , 495.26                      
+Core_2 , 24                , 0.00                        , 3523.94                     , 435.24                      
+Core_3 , 50                , 0.00                        , 1322.64                     , 196.02                      
+
+=========================================
+HWP Capabilities - Guaranteed-Performance
+=========================================
+
+HWP Capabilities - Guaranteed-Performance Summary - Sampled: Min/Max/Avg
+Thread  , Min , Max , Avg    , Time-weighted Avg
+------  , --- , --- , ---    , -----------------
+Thread_0, 3600, 3600, 3600.00, 3600.00          
+Thread_1, 3600, 3600, 3600.00, 3600.00          
+Thread_2, 3600, 3600, 3600.00, 3600.00          
+Thread_3, 3600, 3600, 3600.00, 3600.01          
+Thread_4, 3600, 3600, 3600.00, 3600.00          
+Thread_5, 3600, 3600, 3600.00, 3600.00          
+Thread_6, 3600, 3600, 3600.00, 3600.00          
+Thread_7, 3600, 3600, 3600.00, 3600.00          
+
+======================================
+HWP Capabilities - Highest-Performance
+======================================
+
+HWP Capabilities - Highest-Performance Summary - Sampled: Min/Max/Avg
+Thread  , Min , Max , Avg    , Time-weighted Avg
+------  , --- , --- , ---    , -----------------
+Thread_0, 4200, 4200, 4200.00, 4200.00          
+Thread_1, 4200, 4200, 4200.00, 4200.00          
+Thread_2, 4200, 4200, 4200.00, 4200.00          
+Thread_3, 4200, 4200, 4200.00, 4200.01          
+Thread_4, 4200, 4200, 4200.00, 4200.00          
+Thread_5, 4200, 4200, 4200.00, 4200.00          
+Thread_6, 4200, 4200, 4200.00, 4200.00          
+Thread_7, 4200, 4200, 4200.00, 4200.00          
+
+=====================================
+HWP Capabilities - Lowest-Performance
+=====================================
+
+HWP Capabilities - Lowest-Performance Summary - Sampled: Min/Max/Avg
+Thread  , Min, Max, Avg   , Time-weighted Avg
+------  , ---, ---, ---   , -----------------
+Thread_0, 100, 100, 100.00, 100.00           
+Thread_1, 100, 100, 100.00, 100.00           
+Thread_2, 100, 100, 100.00, 100.00           
+Thread_3, 100, 100, 100.00, 100.00           
+Thread_4, 100, 100, 100.00, 100.00           
+Thread_5, 100, 100, 100.00, 100.00           
+Thread_6, 100, 100, 100.00, 100.00           
+Thread_7, 100, 100, 100.00, 100.00           
+
+=============================================
+HWP Capabilities - Most-Efficient-Performance
+=============================================
+
+HWP Capabilities - Most-Efficient-Performance Summary - Sampled: Min/Max/Avg
+Thread  , Min , Max , Avg    , Time-weighted Avg
+------  , --- , --- , ---    , -----------------
+Thread_0, 1000, 1600, 1114.29, 1129.44          
+Thread_1, 1000, 1600, 1230.77, 1128.12          
+Thread_2, 1000, 1600, 1305.26, 1115.60          
+Thread_3, 1000, 1600, 1101.96, 1180.92          
+Thread_4, 1100, 1600, 1366.67, 1356.76          
+Thread_5, 1000, 1600, 1162.50, 1135.86          
+Thread_6, 1000, 1600, 1266.67, 1196.32          
+Thread_7, 1400, 1600, 1500.00, 1600.00          
+
