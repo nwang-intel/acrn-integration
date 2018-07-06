@@ -1,0 +1,755 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AMD_FAM14H_STATE_NUM	utils/idle_monitor/amd_fam14h_idle.c	/^			AMD_FAM14H_STATE_NUM};$/;"	e	enum:amd_fam14h_states	file:
+AR	Makefile	/^AR = $(CROSS)ar$/;"	m
+ARRAY_SIZE	utils/cpupower.c	24;"	d	file:
+AVG_FREQ	utils/idle_monitor/mperf_monitor.c	/^enum mperf_id { C0 = 0, Cx, AVG_FREQ, MPERF_CSTATE_COUNT };$/;"	e	enum:mperf_id	file:
+BUILTIN_H	utils/builtin.h	3;"	d
+C0	utils/idle_monitor/mperf_monitor.c	/^enum mperf_id { C0 = 0, Cx, AVG_FREQ, MPERF_CSTATE_COUNT };$/;"	e	enum:mperf_id	file:
+C3	utils/idle_monitor/nhm_idle.c	/^enum intel_nhm_id { C3 = 0, C6, PC3, PC6, TSC = 0xFFFF };$/;"	e	enum:intel_nhm_id	file:
+C6	utils/idle_monitor/nhm_idle.c	/^enum intel_nhm_id { C3 = 0, C6, PC3, PC6, TSC = 0xFFFF };$/;"	e	enum:intel_nhm_id	file:
+C7	utils/idle_monitor/snb_idle.c	/^enum intel_snb_id { C7 = 0, PC2, PC7, SNB_CSTATE_COUNT, TSC = 0xFFFF };$/;"	e	enum:intel_snb_id	file:
+CC	Makefile	/^CC = $(CROSS)gcc$/;"	m
+CP	Makefile	/^CP = cp -fpR$/;"	m
+CPUFREQ_BENCH	Makefile	/^CPUFREQ_BENCH ?= true$/;"	m
+CPUIDLE_DRIVER	lib/cpuidle.c	/^	CPUIDLE_DRIVER,$/;"	e	enum:cpuidle_string	file:
+CPUIDLE_DRIVER	utils/helpers/sysfs.c	/^	CPUIDLE_DRIVER,$/;"	e	enum:cpuidle_string	file:
+CPUIDLE_GOVERNOR	lib/cpuidle.c	/^	CPUIDLE_GOVERNOR,$/;"	e	enum:cpuidle_string	file:
+CPUIDLE_GOVERNOR	utils/helpers/sysfs.c	/^	CPUIDLE_GOVERNOR,$/;"	e	enum:cpuidle_string	file:
+CPUIDLE_GOVERNOR_RO	lib/cpuidle.c	/^	CPUIDLE_GOVERNOR_RO,$/;"	e	enum:cpuidle_string	file:
+CPUIDLE_GOVERNOR_RO	utils/helpers/sysfs.c	/^	CPUIDLE_GOVERNOR_RO,$/;"	e	enum:cpuidle_string	file:
+CPUIDLE_STATES_MAX	utils/idle_monitor/cpuidle_sysfs.c	18;"	d	file:
+CPUINFO_CUR_FREQ	lib/cpufreq.c	/^	CPUINFO_CUR_FREQ,$/;"	e	enum:cpufreq_value	file:
+CPUINFO_LATENCY	lib/cpufreq.c	/^	CPUINFO_LATENCY,$/;"	e	enum:cpufreq_value	file:
+CPUINFO_MAX_FREQ	lib/cpufreq.c	/^	CPUINFO_MAX_FREQ,$/;"	e	enum:cpufreq_value	file:
+CPUINFO_MIN_FREQ	lib/cpufreq.c	/^	CPUINFO_MIN_FREQ,$/;"	e	enum:cpufreq_value	file:
+CPUPOWER_AMD_CPBDIS	utils/helpers/helpers.h	74;"	d
+CPUPOWER_CAP_AMD_CBP	utils/helpers/helpers.h	68;"	d
+CPUPOWER_CAP_APERF	utils/helpers/helpers.h	67;"	d
+CPUPOWER_CAP_HAS_TURBO_RATIO	utils/helpers/helpers.h	70;"	d
+CPUPOWER_CAP_INTEL_IDA	utils/helpers/helpers.h	72;"	d
+CPUPOWER_CAP_INV_TSC	utils/helpers/helpers.h	66;"	d
+CPUPOWER_CAP_IS_SNB	utils/helpers/helpers.h	71;"	d
+CPUPOWER_CAP_PERF_BIAS	utils/helpers/helpers.h	69;"	d
+CROSS	Makefile	/^CROSS = #\/usr\/i386-linux-uclibc\/usr\/bin\/i386-uclibc-$/;"	m
+CSTATE_DESC_LEN	utils/idle_monitor/cpupower-monitor.h	19;"	d
+CSTATE_NAME_LEN	utils/idle_monitor/cpupower-monitor.h	18;"	d
+Cx	utils/idle_monitor/mperf_monitor.c	/^enum mperf_id { C0 = 0, Cx, AVG_FREQ, MPERF_CSTATE_COUNT };$/;"	e	enum:mperf_id	file:
+DEBUG	Makefile	/^DEBUG ?=	true$/;"	m
+DEF	utils/idle_monitor/cpupower-monitor.c	26;"	d	file:
+DEF	utils/idle_monitor/idle_monitors.h	13;"	d
+DEF	utils/idle_monitor/idle_monitors.h	15;"	d
+DESTDIR	Makefile	/^DESTDIR ?=$/;"	m
+DESTDIR	debug/i386/Makefile	/^DESTDIR =$/;"	m
+DESTDIR	debug/x86_64/Makefile	/^DESTDIR =$/;"	m
+DIRECTORY_DEPS	Makefile	/^DIRECTORY_DEPS = $(LIB_OBJS) $(UTIL_OBJS) $(GMO_FILES)$/;"	m
+ECHO	Makefile	/^	ECHO=@\\#$/;"	m
+ECHO	Makefile	/^	ECHO=@echo$/;"	m
+GAUGECOUNT	bench/config.h	21;"	d
+GMO_FILES	Makefile	/^GMO_FILES = ${shell for HLANG in ${LANGUAGES}; do echo $(OUTPUT)po\/$$HLANG.gmo; done;}$/;"	m
+HOSTCC	Makefile	/^HOSTCC = gcc$/;"	m
+HSW_EXT_CSTATE_COUNT	utils/idle_monitor/hsw_ext_idle.c	/^enum intel_hsw_ext_id { PC8 = 0, PC9, PC10, HSW_EXT_CSTATE_COUNT,$/;"	e	enum:intel_hsw_ext_id	file:
+IDLESTATE_DESC	lib/cpuidle.c	/^	IDLESTATE_DESC,$/;"	e	enum:idlestate_string	file:
+IDLESTATE_DESC	utils/helpers/sysfs.c	/^	IDLESTATE_DESC,$/;"	e	enum:idlestate_string	file:
+IDLESTATE_DISABLE	lib/cpuidle.c	/^	IDLESTATE_DISABLE,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_DISABLE	utils/helpers/sysfs.c	/^	IDLESTATE_DISABLE,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_LATENCY	lib/cpuidle.c	/^	IDLESTATE_LATENCY,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_LATENCY	utils/helpers/sysfs.c	/^	IDLESTATE_LATENCY,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_NAME	lib/cpuidle.c	/^	IDLESTATE_NAME,$/;"	e	enum:idlestate_string	file:
+IDLESTATE_NAME	utils/helpers/sysfs.c	/^	IDLESTATE_NAME,$/;"	e	enum:idlestate_string	file:
+IDLESTATE_POWER	lib/cpuidle.c	/^	IDLESTATE_POWER,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_POWER	utils/helpers/sysfs.c	/^	IDLESTATE_POWER,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_TIME	lib/cpuidle.c	/^	IDLESTATE_TIME,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_TIME	utils/helpers/sysfs.c	/^	IDLESTATE_TIME,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_USAGE	lib/cpuidle.c	/^	IDLESTATE_USAGE,$/;"	e	enum:idlestate_value	file:
+IDLESTATE_USAGE	utils/helpers/sysfs.c	/^	IDLESTATE_USAGE,$/;"	e	enum:idlestate_value	file:
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	debug/i386/Makefile	/^INSTALL = \/usr\/bin\/install$/;"	m
+INSTALL	debug/x86_64/Makefile	/^INSTALL = \/usr\/bin\/install$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA  = ${INSTALL} -m 644$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL_PROGRAM}$/;"	m
+KDIR	debug/kernel/Makefile	/^KDIR	:= \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KMISC	debug/kernel/Makefile	/^KMISC   := \/lib\/modules\/$(shell uname -r)\/cpufrequtils\/$/;"	m
+LANGUAGES	Makefile	/^LANGUAGES = 			de fr it cs pt$/;"	m
+LD	Makefile	/^LD = $(CROSS)gcc$/;"	m
+LEN	debug/i386/dump_psb.c	17;"	d	file:
+LIBS	bench/Makefile	/^LIBS = -L..\/ -L$(OUTPUT) -lm -lcpupower$/;"	m
+LIBS	bench/Makefile	/^LIBS = -L..\/ -L$(OUTPUT) -lm$/;"	m
+LIB_HEADERS	Makefile	/^LIB_HEADERS = 	lib\/cpufreq.h lib\/cpupower.h lib\/cpuidle.h$/;"	m
+LIB_MAJ	Makefile	/^LIB_MAJ=			0.0.1$/;"	m
+LIB_MIN	Makefile	/^LIB_MIN=			0$/;"	m
+LIB_OBJS	Makefile	/^LIB_OBJS :=	$(addprefix $(OUTPUT),$(LIB_OBJS))$/;"	m
+LIB_OBJS	Makefile	/^LIB_OBJS = 	lib\/cpufreq.o lib\/cpupower.o lib\/cpuidle.o$/;"	m
+LIB_SRC	Makefile	/^LIB_SRC = 	lib\/cpufreq.c lib\/cpupower.c lib\/cpuidle.c$/;"	m
+LINE_LEN	utils/cpufreq-info.c	22;"	d	file:
+LINE_LEN	utils/cpuidle-info.c	22;"	d	file:
+MAX_CPUFREQ_STRING_FILES	lib/cpufreq.c	/^	MAX_CPUFREQ_STRING_FILES$/;"	e	enum:cpufreq_string	file:
+MAX_CPUFREQ_VALUE_READ_FILES	lib/cpufreq.c	/^	MAX_CPUFREQ_VALUE_READ_FILES$/;"	e	enum:cpufreq_value	file:
+MAX_CPUFREQ_WRITE_FILES	lib/cpufreq.c	/^	MAX_CPUFREQ_WRITE_FILES$/;"	e	enum:cpufreq_write	file:
+MAX_CPUIDLE_STRING_FILES	lib/cpuidle.c	/^	MAX_CPUIDLE_STRING_FILES$/;"	e	enum:cpuidle_string	file:
+MAX_CPUIDLE_STRING_FILES	utils/helpers/sysfs.c	/^	MAX_CPUIDLE_STRING_FILES$/;"	e	enum:cpuidle_string	file:
+MAX_FREQ_MODE	utils/idle_monitor/mperf_monitor.c	/^enum MAX_FREQ_MODE { MAX_FREQ_SYSFS, MAX_FREQ_TSC_REF };$/;"	g	file:
+MAX_FREQ_SYSFS	utils/idle_monitor/mperf_monitor.c	/^enum MAX_FREQ_MODE { MAX_FREQ_SYSFS, MAX_FREQ_TSC_REF };$/;"	e	enum:MAX_FREQ_MODE	file:
+MAX_FREQ_TSC_REF	utils/idle_monitor/mperf_monitor.c	/^enum MAX_FREQ_MODE { MAX_FREQ_SYSFS, MAX_FREQ_TSC_REF };$/;"	e	enum:MAX_FREQ_MODE	file:
+MAX_HW_PSTATES	utils/helpers/helpers.h	76;"	d
+MAX_IDLESTATE_STRING_FILES	lib/cpuidle.c	/^	MAX_IDLESTATE_STRING_FILES$/;"	e	enum:idlestate_string	file:
+MAX_IDLESTATE_STRING_FILES	utils/helpers/sysfs.c	/^	MAX_IDLESTATE_STRING_FILES$/;"	e	enum:idlestate_string	file:
+MAX_IDLESTATE_VALUE_FILES	lib/cpuidle.c	/^	MAX_IDLESTATE_VALUE_FILES$/;"	e	enum:idlestate_value	file:
+MAX_IDLESTATE_VALUE_FILES	utils/helpers/sysfs.c	/^	MAX_IDLESTATE_VALUE_FILES$/;"	e	enum:idlestate_value	file:
+MAX_LINE_LEN	lib/cpupower_intern.h	3;"	d
+MAX_LINE_LEN	utils/helpers/sysfs.h	6;"	d
+MCPU	debug/i386/centrino-decode.c	25;"	d	file:
+MCPU	debug/i386/powernow-k8-decode.c	21;"	d	file:
+MKDIR	Makefile	/^MKDIR = mkdir$/;"	m
+MONITORS_MAX	utils/idle_monitor/cpupower-monitor.h	16;"	d
+MONITOR_NAME_LEN	utils/idle_monitor/cpupower-monitor.h	17;"	d
+MPERF_CSTATE_COUNT	utils/idle_monitor/mperf_monitor.c	/^enum mperf_id { C0 = 0, Cx, AVG_FREQ, MPERF_CSTATE_COUNT };$/;"	e	enum:mperf_id	file:
+MSR_AMD_HWCR	utils/helpers/misc.c	6;"	d	file:
+MSR_AMD_HWCR	utils/idle_monitor/mperf_monitor.c	25;"	d	file:
+MSR_AMD_PSTATE	utils/helpers/amd.c	13;"	d	file:
+MSR_AMD_PSTATE_LIMIT	utils/helpers/amd.c	14;"	d	file:
+MSR_AMD_PSTATE_STATUS	utils/helpers/amd.c	12;"	d	file:
+MSR_APERF	utils/idle_monitor/mperf_monitor.c	20;"	d	file:
+MSR_CORE_C3_RESIDENCY	utils/idle_monitor/nhm_idle.c	21;"	d	file:
+MSR_CORE_C6_RESIDENCY	utils/idle_monitor/nhm_idle.c	22;"	d	file:
+MSR_CORE_C7_RESIDENCY	utils/idle_monitor/snb_idle.c	21;"	d	file:
+MSR_FIDVID_STATUS	debug/i386/powernow-k8-decode.c	23;"	d	file:
+MSR_IA32_ENERGY_PERF_BIAS	utils/helpers/msr.c	14;"	d	file:
+MSR_IA32_MISC_ENABLES	utils/helpers/msr.c	13;"	d	file:
+MSR_IA32_PERF_STATUS	debug/i386/centrino-decode.c	27;"	d	file:
+MSR_IA32_PERF_STATUS	utils/helpers/msr.c	12;"	d	file:
+MSR_MPERF	utils/idle_monitor/mperf_monitor.c	21;"	d	file:
+MSR_NEHALEM_TURBO_RATIO_LIMIT	utils/helpers/msr.c	15;"	d	file:
+MSR_PKG_C10_RESIDENCY	utils/idle_monitor/hsw_ext_idle.c	22;"	d	file:
+MSR_PKG_C2_RESIDENCY	utils/idle_monitor/snb_idle.c	19;"	d	file:
+MSR_PKG_C3_RESIDENCY	utils/idle_monitor/nhm_idle.c	19;"	d	file:
+MSR_PKG_C6_RESIDENCY	utils/idle_monitor/nhm_idle.c	20;"	d	file:
+MSR_PKG_C7_RESIDENCY	utils/idle_monitor/snb_idle.c	20;"	d	file:
+MSR_PKG_C8_RESIDENCY	utils/idle_monitor/hsw_ext_idle.c	20;"	d	file:
+MSR_PKG_C9_RESIDENCY	utils/idle_monitor/hsw_ext_idle.c	21;"	d	file:
+MSR_S_HI_CURRENT_VID	debug/i386/powernow-k8-decode.c	25;"	d	file:
+MSR_S_LO_CURRENT_FID	debug/i386/powernow-k8-decode.c	26;"	d	file:
+MSR_TSC	utils/idle_monitor/hsw_ext_idle.c	24;"	d	file:
+MSR_TSC	utils/idle_monitor/mperf_monitor.c	23;"	d	file:
+MSR_TSC	utils/idle_monitor/nhm_idle.c	24;"	d	file:
+MSR_TSC	utils/idle_monitor/snb_idle.c	23;"	d	file:
+NBP1	utils/idle_monitor/amd_fam14h_idle.c	/^enum amd_fam14h_states {NON_PC0 = 0, PC1, PC6, NBP1,$/;"	e	enum:amd_fam14h_states	file:
+NHM_CSTATE_COUNT	utils/idle_monitor/nhm_idle.c	26;"	d	file:
+NLS	Makefile	/^NLS ?=		true$/;"	m
+NON_PC0	utils/idle_monitor/amd_fam14h_idle.c	/^enum amd_fam14h_states {NON_PC0 = 0, PC1, PC6, NBP1,$/;"	e	enum:amd_fam14h_states	file:
+NORM_FREQ_LEN	utils/cpufreq-set.c	22;"	d	file:
+N_	utils/helpers/helpers.h	26;"	d
+N_	utils/helpers/helpers.h	31;"	d
+OBJS	bench/Makefile	/^OBJS = $(OUTPUT)main.o $(OUTPUT)parse.o $(OUTPUT)system.o $(OUTPUT)benchmark.o \\$/;"	m
+OBJS	bench/Makefile	/^OBJS = $(OUTPUT)main.o $(OUTPUT)parse.o $(OUTPUT)system.o $(OUTPUT)benchmark.o$/;"	m
+OFFSET	debug/i386/dump_psb.c	18;"	d	file:
+OPTIMIZATION	Makefile	/^OPTIMIZATION := $(call cc-supports,-Os,-O2)$/;"	m
+OUTDIR	Makefile	/^OUTDIR := $(shell cd $(OUTPUT) && \/bin\/pwd)$/;"	m
+OUTPUT	Makefile	/^	OUTPUT := $(O)\/$/;"	m
+OUTPUT	Makefile	/^OUTPUT=.\/$/;"	m
+OUTPUT	bench/Makefile	/^	OUTPUT := $(O)\/$/;"	m
+OUTPUT	bench/Makefile	/^OUTPUT := .\/$/;"	m
+OUTPUT	debug/i386/Makefile	/^	OUTPUT := $(O)\/$/;"	m
+OUTPUT	debug/i386/Makefile	/^OUTPUT=.\/$/;"	m
+OUTPUT	debug/x86_64/Makefile	/^	OUTPUT := $(O)\/$/;"	m
+OUTPUT	debug/x86_64/Makefile	/^OUTPUT=.\/$/;"	m
+OVERFLOW_MS	utils/idle_monitor/amd_fam14h_idle.c	40;"	d	file:
+PACKAGE	Makefile	/^PACKAGE =			cpupower$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT =		linux-pm@vger.kernel.org$/;"	m
+PATH_TO_CPU	lib/cpupower_intern.h	2;"	d
+PATH_TO_CPU	utils/helpers/sysfs.h	5;"	d
+PC1	utils/idle_monitor/amd_fam14h_idle.c	/^enum amd_fam14h_states {NON_PC0 = 0, PC1, PC6, NBP1,$/;"	e	enum:amd_fam14h_states	file:
+PC10	utils/idle_monitor/hsw_ext_idle.c	/^enum intel_hsw_ext_id { PC8 = 0, PC9, PC10, HSW_EXT_CSTATE_COUNT,$/;"	e	enum:intel_hsw_ext_id	file:
+PC2	utils/idle_monitor/snb_idle.c	/^enum intel_snb_id { C7 = 0, PC2, PC7, SNB_CSTATE_COUNT, TSC = 0xFFFF };$/;"	e	enum:intel_snb_id	file:
+PC3	utils/idle_monitor/nhm_idle.c	/^enum intel_nhm_id { C3 = 0, C6, PC3, PC6, TSC = 0xFFFF };$/;"	e	enum:intel_nhm_id	file:
+PC6	utils/idle_monitor/amd_fam14h_idle.c	/^enum amd_fam14h_states {NON_PC0 = 0, PC1, PC6, NBP1,$/;"	e	enum:amd_fam14h_states	file:
+PC6	utils/idle_monitor/nhm_idle.c	/^enum intel_nhm_id { C3 = 0, C6, PC3, PC6, TSC = 0xFFFF };$/;"	e	enum:intel_nhm_id	file:
+PC7	utils/idle_monitor/snb_idle.c	/^enum intel_snb_id { C7 = 0, PC2, PC7, SNB_CSTATE_COUNT, TSC = 0xFFFF };$/;"	e	enum:intel_snb_id	file:
+PC8	utils/idle_monitor/hsw_ext_idle.c	/^enum intel_hsw_ext_id { PC8 = 0, PC9, PC10, HSW_EXT_CSTATE_COUNT,$/;"	e	enum:intel_hsw_ext_id	file:
+PC9	utils/idle_monitor/hsw_ext_idle.c	/^enum intel_hsw_ext_id { PC8 = 0, PC9, PC10, HSW_EXT_CSTATE_COUNT,$/;"	e	enum:intel_hsw_ext_id	file:
+PCI_MONITOR_ENABLE_REG	utils/idle_monitor/amd_fam14h_idle.c	27;"	d	file:
+PCI_NBP1_ACTIVE_BIT	utils/idle_monitor/amd_fam14h_idle.c	34;"	d	file:
+PCI_NBP1_CAPABLE_BIT	utils/idle_monitor/amd_fam14h_idle.c	38;"	d	file:
+PCI_NBP1_CAP_OFFSET	utils/idle_monitor/amd_fam14h_idle.c	37;"	d	file:
+PCI_NBP1_ENTERED_BIT	utils/idle_monitor/amd_fam14h_idle.c	35;"	d	file:
+PCI_NBP1_STAT_OFFSET	utils/idle_monitor/amd_fam14h_idle.c	33;"	d	file:
+PCI_NON_PC0_ENABLE_BIT	utils/idle_monitor/amd_fam14h_idle.c	29;"	d	file:
+PCI_NON_PC0_OFFSET	utils/idle_monitor/amd_fam14h_idle.c	23;"	d	file:
+PCI_PC1_ENABLE_BIT	utils/idle_monitor/amd_fam14h_idle.c	30;"	d	file:
+PCI_PC1_OFFSET	utils/idle_monitor/amd_fam14h_idle.c	24;"	d	file:
+PCI_PC6_ENABLE_BIT	utils/idle_monitor/amd_fam14h_idle.c	31;"	d	file:
+PCI_PC6_OFFSET	utils/idle_monitor/amd_fam14h_idle.c	25;"	d	file:
+PRIORITY_DEFAULT	bench/config.h	26;"	d
+PRIORITY_HIGH	bench/config.h	27;"	d
+PRIORITY_LOW	bench/config.h	28;"	d
+QUIET	Makefile	/^	QUIET=$/;"	m
+QUIET	Makefile	/^	QUIET=@$/;"	m
+RANGE_CORE	utils/idle_monitor/cpupower-monitor.h	/^	RANGE_CORE,	\/* AMD: unit, Intel: core, kernel_sysfs: core_id *\/$/;"	e	enum:power_range_e
+RANGE_MACHINE	utils/idle_monitor/cpupower-monitor.h	/^	RANGE_MACHINE,	\/* Machine, platform wide *\/$/;"	e	enum:power_range_e
+RANGE_MAX	utils/idle_monitor/cpupower-monitor.h	/^	RANGE_MAX };$/;"	e	enum:power_range_e
+RANGE_PACKAGE	utils/idle_monitor/cpupower-monitor.h	/^	RANGE_PACKAGE,	\/* Package, processor socket *\/$/;"	e	enum:power_range_e
+RANGE_THREAD	utils/idle_monitor/cpupower-monitor.h	/^	RANGE_THREAD,	\/* Lowest in topology hierarcy, AMD: core, Intel: thread$/;"	e	enum:power_range_e
+RANLIB	Makefile	/^RANLIB = $(CROSS)ranlib$/;"	m
+ROUNDS	bench/benchmark.h	21;"	d
+SCALING_CUR_FREQ	lib/cpufreq.c	/^	SCALING_CUR_FREQ,$/;"	e	enum:cpufreq_value	file:
+SCALING_DRIVER	lib/cpufreq.c	/^	SCALING_DRIVER,$/;"	e	enum:cpufreq_string	file:
+SCALING_GOVERNOR	lib/cpufreq.c	/^	SCALING_GOVERNOR,$/;"	e	enum:cpufreq_string	file:
+SCALING_MAX_FREQ	lib/cpufreq.c	/^	SCALING_MAX_FREQ,$/;"	e	enum:cpufreq_value	file:
+SCALING_MIN_FREQ	lib/cpufreq.c	/^	SCALING_MIN_FREQ,$/;"	e	enum:cpufreq_value	file:
+SCHEDULER	bench/config.h	24;"	d
+SCHED_DEFAULT	bench/parse.h	/^		SCHED_DEFAULT,$/;"	e	enum:config::sched_prio
+SCHED_ERR	bench/parse.h	/^		SCHED_ERR = -1,$/;"	e	enum:config::sched_prio
+SCHED_HIGH	bench/parse.h	/^		SCHED_HIGH,$/;"	e	enum:config::sched_prio
+SCHED_LOW	bench/parse.h	/^		SCHED_LOW$/;"	e	enum:config::sched_prio
+SNB_CSTATE_COUNT	utils/idle_monitor/snb_idle.c	/^enum intel_snb_id { C7 = 0, PC2, PC7, SNB_CSTATE_COUNT, TSC = 0xFFFF };$/;"	e	enum:intel_snb_id	file:
+STATIC	Makefile	/^export STATIC ?= false$/;"	m
+STATS_NUM_TRANSITIONS	lib/cpufreq.c	/^	STATS_NUM_TRANSITIONS,$/;"	e	enum:cpufreq_value	file:
+STRIP	Makefile	/^STRIP = $(CROSS)strip$/;"	m
+STRIPCMD	Makefile	/^	STRIPCMD = $(STRIP) -s --remove-section=.note --remove-section=.comment$/;"	m
+STRIPCMD	Makefile	/^	STRIPCMD = \/bin\/true -Since_we_are_debugging$/;"	m
+SYSFS_PATH_MAX	lib/cpupower_intern.h	4;"	d
+SYSFS_PATH_MAX	utils/helpers/sysfs.h	7;"	d
+TSC	utils/idle_monitor/hsw_ext_idle.c	/^			TSC = 0xFFFF };$/;"	e	enum:intel_hsw_ext_id	file:
+TSC	utils/idle_monitor/nhm_idle.c	/^enum intel_nhm_id { C3 = 0, C6, PC3, PC6, TSC = 0xFFFF };$/;"	e	enum:intel_nhm_id	file:
+TSC	utils/idle_monitor/snb_idle.c	/^enum intel_snb_id { C7 = 0, PC2, PC7, SNB_CSTATE_COUNT, TSC = 0xFFFF };$/;"	e	enum:intel_snb_id	file:
+UTIL_HEADERS	Makefile	/^UTIL_HEADERS = utils\/helpers\/helpers.h utils\/idle_monitor\/cpupower-monitor.h \\$/;"	m
+UTIL_OBJS	Makefile	/^UTIL_OBJS := $(addprefix $(OUTPUT),$(UTIL_OBJS))$/;"	m
+UTIL_OBJS	Makefile	/^UTIL_OBJS =  utils\/helpers\/amd.o utils\/helpers\/msr.o \\$/;"	m
+UTIL_SRC	Makefile	/^UTIL_SRC := $(UTIL_OBJS:.o=.c)$/;"	m
+V	Makefile	/^V ?=		false$/;"	m
+VERSION	Makefile	/^VERSION=			$(shell .\/utils\/version-gen.sh)$/;"	m
+WARNINGS	Makefile	/^WARNINGS := -Wall -Wchar-subscripts -Wpointer-arith -Wsign-compare$/;"	m
+WRITE_SCALING_GOVERNOR	lib/cpufreq.c	/^	WRITE_SCALING_GOVERNOR,$/;"	e	enum:cpufreq_write	file:
+WRITE_SCALING_MAX_FREQ	lib/cpufreq.c	/^	WRITE_SCALING_MAX_FREQ,$/;"	e	enum:cpufreq_write	file:
+WRITE_SCALING_MIN_FREQ	lib/cpufreq.c	/^	WRITE_SCALING_MIN_FREQ,$/;"	e	enum:cpufreq_write	file:
+WRITE_SCALING_SET_SPEED	lib/cpufreq.c	/^	WRITE_SCALING_SET_SPEED,$/;"	e	enum:cpufreq_write	file:
+X86_VENDOR_AMD	utils/helpers/helpers.h	/^			  X86_VENDOR_AMD, X86_VENDOR_MAX};$/;"	e	enum:cpupower_cpu_vendor
+X86_VENDOR_INTEL	utils/helpers/helpers.h	/^enum cpupower_cpu_vendor {X86_VENDOR_UNKNOWN = 0, X86_VENDOR_INTEL,$/;"	e	enum:cpupower_cpu_vendor
+X86_VENDOR_MAX	utils/helpers/helpers.h	/^			  X86_VENDOR_AMD, X86_VENDOR_MAX};$/;"	e	enum:cpupower_cpu_vendor
+X86_VENDOR_UNKNOWN	utils/helpers/helpers.h	/^enum cpupower_cpu_vendor {X86_VENDOR_UNKNOWN = 0, X86_VENDOR_INTEL,$/;"	e	enum:cpupower_cpu_vendor
+_	utils/helpers/helpers.h	22;"	d
+_	utils/helpers/helpers.h	30;"	d
+_CPUIDLE_IDLE_MONITORS_H_	utils/idle_monitor/idle_monitors.h	11;"	d
+_GNU_SOURCE	debug/i386/dump_psb.c	12;"	d	file:
+__CPUIDLE_INFO_HW__	utils/idle_monitor/cpupower-monitor.h	9;"	d
+__CPUPOWERUTILS_HELPERS__	utils/helpers/helpers.h	11;"	d
+__CPUPOWER_BITMASK__	utils/helpers/bitmask.h	3;"	d
+__CPUPOWER_CPUFREQ_H__	lib/cpufreq.h	21;"	d
+__CPUPOWER_CPUIDLE_H__	lib/cpuidle.h	3;"	d
+__CPUPOWER_CPUPOWER_H__	lib/cpupower.h	3;"	d
+__CPUPOWER_HELPERS_SYSFS_H__	utils/helpers/sysfs.h	3;"	d
+__compare	lib/cpupower.c	/^static int __compare(const void *t1, const void *t2)$/;"	f	file:
+__packed	debug/i386/dump_psb.c	/^} __packed;$/;"	v	typeref:struct:psb_header
+__packed	debug/i386/dump_psb.c	/^} __packed;$/;"	v	typeref:struct:pst_header
+__packed	debug/i386/dump_psb.c	21;"	d	file:
+_getbit	utils/helpers/bitmask.c	/^static unsigned int _getbit(const struct bitmask *bmp, unsigned int n)$/;"	f	file:
+_setbit	utils/helpers/bitmask.c	/^static void _setbit(struct bitmask *bmp, unsigned int n, unsigned int v)$/;"	f	file:
+all_monitors	utils/idle_monitor/cpupower-monitor.c	/^struct cpuidle_monitor *all_monitors[] = {$/;"	v	typeref:struct:cpuidle_monitor
+amd_fam14h_cstates	utils/idle_monitor/amd_fam14h_idle.c	/^static cstate_t amd_fam14h_cstates[AMD_FAM14H_STATE_NUM] = {$/;"	v	file:
+amd_fam14h_disable	utils/idle_monitor/amd_fam14h_idle.c	/^static int amd_fam14h_disable(cstate_t *state, unsigned int cpu)$/;"	f	file:
+amd_fam14h_get_pci_info	utils/idle_monitor/amd_fam14h_idle.c	/^static int amd_fam14h_get_pci_info(struct cstate *state,$/;"	f	file:
+amd_fam14h_init	utils/idle_monitor/amd_fam14h_idle.c	/^static int amd_fam14h_init(cstate_t *state, unsigned int cpu)$/;"	f	file:
+amd_fam14h_monitor	utils/idle_monitor/amd_fam14h_idle.c	/^struct cpuidle_monitor amd_fam14h_monitor = {$/;"	v	typeref:struct:cpuidle_monitor
+amd_fam14h_pci_dev	utils/idle_monitor/amd_fam14h_idle.c	/^static struct pci_dev *amd_fam14h_pci_dev;$/;"	v	typeref:struct:pci_dev	file:
+amd_fam14h_register	utils/idle_monitor/amd_fam14h_idle.c	/^struct cpuidle_monitor *amd_fam14h_register(void)$/;"	f
+amd_fam14h_start	utils/idle_monitor/amd_fam14h_idle.c	/^static int amd_fam14h_start(void)$/;"	f	file:
+amd_fam14h_states	utils/idle_monitor/amd_fam14h_idle.c	/^enum amd_fam14h_states {NON_PC0 = 0, PC1, PC6, NBP1,$/;"	g	file:
+amd_fam14h_stop	utils/idle_monitor/amd_fam14h_idle.c	/^static int amd_fam14h_stop(void)$/;"	f	file:
+amd_fam14h_unregister	utils/idle_monitor/amd_fam14h_idle.c	/^static void amd_fam14h_unregister(void)$/;"	f	file:
+amd_pci_get_num_boost_states	utils/helpers/amd.c	/^int amd_pci_get_num_boost_states(int *active, int *states)$/;"	f
+aperf_current_count	utils/idle_monitor/mperf_monitor.c	/^static unsigned long long *aperf_current_count;$/;"	v	file:
+aperf_previous_count	utils/idle_monitor/mperf_monitor.c	/^static unsigned long long *aperf_previous_count;$/;"	v	file:
+avail_monitors	utils/idle_monitor/cpupower-monitor.c	/^static unsigned int avail_monitors;$/;"	v	file:
+base_cpu	utils/cpupower.c	/^int base_cpu;$/;"	v
+be_verbose	utils/cpupower.c	/^int be_verbose;$/;"	v
+bind_cpu	utils/idle_monitor/cpupower-monitor.h	/^static inline int bind_cpu(int cpu)$/;"	f
+bindir	Makefile	/^bindir ?=	\/usr\/bin$/;"	m
+bindir	debug/i386/Makefile	/^bindir  = \/usr\/bin$/;"	m
+bindir	debug/x86_64/Makefile	/^bindir  = \/usr\/bin$/;"	m
+bitmask	utils/helpers/bitmask.h	/^struct bitmask {$/;"	s
+bitmask_alloc	utils/helpers/bitmask.c	/^struct bitmask *bitmask_alloc(unsigned int n)$/;"	f
+bitmask_clearall	utils/helpers/bitmask.c	/^struct bitmask *bitmask_clearall(struct bitmask *bmp)$/;"	f
+bitmask_displaylist	utils/helpers/bitmask.c	/^int bitmask_displaylist(char *buf, int buflen, const struct bitmask *bmp)$/;"	f
+bitmask_first	utils/helpers/bitmask.c	/^unsigned int bitmask_first(const struct bitmask *bmp)$/;"	f
+bitmask_free	utils/helpers/bitmask.c	/^void bitmask_free(struct bitmask *bmp)$/;"	f
+bitmask_isallclear	utils/helpers/bitmask.c	/^int bitmask_isallclear(const struct bitmask *bmp)$/;"	f
+bitmask_isbitset	utils/helpers/bitmask.c	/^int bitmask_isbitset(const struct bitmask *bmp, unsigned int i)$/;"	f
+bitmask_last	utils/helpers/bitmask.c	/^unsigned int bitmask_last(const struct bitmask *bmp)$/;"	f
+bitmask_next	utils/helpers/bitmask.c	/^unsigned int bitmask_next(const struct bitmask *bmp, unsigned int i)$/;"	f
+bitmask_parselist	utils/helpers/bitmask.c	/^int bitmask_parselist(const char *buf, struct bitmask *bmp)$/;"	f
+bitmask_setall	utils/helpers/bitmask.c	/^struct bitmask *bitmask_setall(struct bitmask *bmp)$/;"	f
+bitmask_setbit	utils/helpers/bitmask.c	/^struct bitmask *bitmask_setbit(struct bitmask *bmp, unsigned int i)$/;"	f
+bits	utils/helpers/amd.c	/^	} bits;$/;"	m	union:msr_pstate	typeref:struct:msr_pstate::__anon1	file:
+bitsperlong	utils/helpers/bitmask.c	9;"	d	file:
+calculate_timespace	bench/benchmark.c	/^unsigned int calculate_timespace(long load, struct config *config)$/;"	f
+caps	utils/helpers/helpers.h	/^	unsigned long long caps;$/;"	m	struct:cpupower_cpu_info
+cc-supports	Makefile	/^cc-supports = ${shell if $(CC) ${1} -S -o \/dev\/null -x c \/dev\/null > \/dev\/null 2>&1; then echo "$(1)"; fi;}$/;"	m
+cmd	utils/cpupower.c	/^	const char *cmd;$/;"	m	struct:cmd_struct	file:
+cmd_freq_info	utils/cpufreq-info.c	/^int cmd_freq_info(int argc, char **argv)$/;"	f
+cmd_freq_set	utils/cpufreq-set.c	/^int cmd_freq_set(int argc, char **argv)$/;"	f
+cmd_help	utils/cpupower.c	/^static int cmd_help(int argc, const char **argv)$/;"	f	file:
+cmd_idle_info	utils/cpuidle-info.c	/^int cmd_idle_info(int argc, char **argv)$/;"	f
+cmd_idle_set	utils/cpuidle-set.c	/^int cmd_idle_set(int argc, char **argv)$/;"	f
+cmd_info	utils/cpupower-info.c	/^int cmd_info(int argc, char **argv)$/;"	f
+cmd_monitor	utils/idle_monitor/cpupower-monitor.c	/^int cmd_monitor(int argc, char **argv)$/;"	f
+cmd_set	utils/cpupower-set.c	/^int cmd_set(int argc, char **argv)$/;"	f
+cmd_struct	utils/cpupower.c	/^struct cmd_struct {$/;"	s	file:
+cmdline	utils/idle_monitor/cpupower-monitor.c	/^static void cmdline(int argc, char *argv[])$/;"	f	file:
+commands	utils/cpupower.c	/^static struct cmd_struct commands[] = {$/;"	v	typeref:struct:cmd_struct	file:
+confdir	Makefile	/^confdir ?=      \/etc\/$/;"	m
+config	bench/parse.h	/^struct config$/;"	s
+core	lib/cpupower.h	/^	int core;$/;"	m	struct:cpuid_core_info
+core_info	lib/cpupower.h	/^	struct cpuid_core_info *core_info;$/;"	m	struct:cpupower_topology	typeref:struct:cpupower_topology::cpuid_core_info
+cores	lib/cpupower.h	/^	unsigned int cores;$/;"	m	struct:cpupower_topology
+count_cpus	utils/cpufreq-info.c	/^static unsigned int count_cpus(void)$/;"	f	file:
+cpu	bench/parse.h	/^	unsigned int cpu;	\/* cpu for which the affinity is set *\/$/;"	m	struct:config
+cpu	lib/cpufreq.h	/^	unsigned int cpu;$/;"	m	struct:cpufreq_affected_cpus
+cpu	lib/cpupower.h	/^	int cpu;$/;"	m	struct:cpuid_core_info
+cpu_count	utils/idle_monitor/cpupower-monitor.h	/^int cpu_count;$/;"	v
+cpu_top	utils/idle_monitor/cpupower-monitor.c	/^static struct cpupower_topology cpu_top;$/;"	v	typeref:struct:cpupower_topology	file:
+cpu_topology_release	lib/cpupower.c	/^void cpu_topology_release(struct cpupower_topology cpu_top)$/;"	f
+cpu_vendor_table	utils/helpers/cpuid.c	/^static const char *cpu_vendor_table[X86_VENDOR_MAX] = {$/;"	v	file:
+cpufreq_affected_cpus	lib/cpufreq.h	/^struct cpufreq_affected_cpus {$/;"	s
+cpufreq_available_frequencies	lib/cpufreq.h	/^struct cpufreq_available_frequencies {$/;"	s
+cpufreq_available_governors	lib/cpufreq.h	/^struct cpufreq_available_governors {$/;"	s
+cpufreq_get	lib/cpufreq.h	73;"	d
+cpufreq_get_affected_cpus	lib/cpufreq.c	/^struct cpufreq_affected_cpus *cpufreq_get_affected_cpus(unsigned int cpu)$/;"	f
+cpufreq_get_available_frequencies	lib/cpufreq.c	/^*cpufreq_get_available_frequencies(unsigned int cpu)$/;"	f
+cpufreq_get_available_governors	lib/cpufreq.c	/^struct cpufreq_available_governors *cpufreq_get_available_governors(unsigned$/;"	f
+cpufreq_get_driver	lib/cpufreq.c	/^char *cpufreq_get_driver(unsigned int cpu)$/;"	f
+cpufreq_get_freq_hardware	lib/cpufreq.c	/^unsigned long cpufreq_get_freq_hardware(unsigned int cpu)$/;"	f
+cpufreq_get_freq_kernel	lib/cpufreq.c	/^unsigned long cpufreq_get_freq_kernel(unsigned int cpu)$/;"	f
+cpufreq_get_hardware_limits	lib/cpufreq.c	/^int cpufreq_get_hardware_limits(unsigned int cpu,$/;"	f
+cpufreq_get_policy	lib/cpufreq.c	/^struct cpufreq_policy *cpufreq_get_policy(unsigned int cpu)$/;"	f
+cpufreq_get_related_cpus	lib/cpufreq.c	/^struct cpufreq_affected_cpus *cpufreq_get_related_cpus(unsigned int cpu)$/;"	f
+cpufreq_get_stats	lib/cpufreq.c	/^struct cpufreq_stats *cpufreq_get_stats(unsigned int cpu,$/;"	f
+cpufreq_get_transition_latency	lib/cpufreq.c	/^unsigned long cpufreq_get_transition_latency(unsigned int cpu)$/;"	f
+cpufreq_get_transitions	lib/cpufreq.c	/^unsigned long cpufreq_get_transitions(unsigned int cpu)$/;"	f
+cpufreq_has_boost_support	utils/helpers/helpers.h	/^static inline int cpufreq_has_boost_support(unsigned int cpu, int *support,$/;"	f
+cpufreq_has_boost_support	utils/helpers/misc.c	/^int cpufreq_has_boost_support(unsigned int cpu, int *support, int *active,$/;"	f
+cpufreq_modify_policy_governor	lib/cpufreq.c	/^int cpufreq_modify_policy_governor(unsigned int cpu, char *governor)$/;"	f
+cpufreq_modify_policy_max	lib/cpufreq.c	/^int cpufreq_modify_policy_max(unsigned int cpu, unsigned long max_freq)$/;"	f
+cpufreq_modify_policy_min	lib/cpufreq.c	/^int cpufreq_modify_policy_min(unsigned int cpu, unsigned long min_freq)$/;"	f
+cpufreq_none	debug/kernel/cpufreq-test_tsc.c	/^static void __exit cpufreq_none(void)$/;"	f	file:
+cpufreq_policy	lib/cpufreq.h	/^struct cpufreq_policy {$/;"	s
+cpufreq_put_affected_cpus	lib/cpufreq.c	/^void cpufreq_put_affected_cpus(struct cpufreq_affected_cpus *any)$/;"	f
+cpufreq_put_available_frequencies	lib/cpufreq.c	/^void cpufreq_put_available_frequencies(struct cpufreq_available_frequencies$/;"	f
+cpufreq_put_available_governors	lib/cpufreq.c	/^void cpufreq_put_available_governors(struct cpufreq_available_governors *any)$/;"	f
+cpufreq_put_driver	lib/cpufreq.c	/^void cpufreq_put_driver(char *ptr)$/;"	f
+cpufreq_put_policy	lib/cpufreq.c	/^void cpufreq_put_policy(struct cpufreq_policy *policy)$/;"	f
+cpufreq_put_related_cpus	lib/cpufreq.c	/^void cpufreq_put_related_cpus(struct cpufreq_affected_cpus *any)$/;"	f
+cpufreq_put_stats	lib/cpufreq.c	/^void cpufreq_put_stats(struct cpufreq_stats *any)$/;"	f
+cpufreq_set_frequency	lib/cpufreq.c	/^int cpufreq_set_frequency(unsigned int cpu, unsigned long target_frequency)$/;"	f
+cpufreq_set_policy	lib/cpufreq.c	/^int cpufreq_set_policy(unsigned int cpu, struct cpufreq_policy *policy)$/;"	f
+cpufreq_stats	lib/cpufreq.h	/^struct cpufreq_stats {$/;"	s
+cpufreq_string	lib/cpufreq.c	/^enum cpufreq_string {$/;"	g	file:
+cpufreq_string_files	lib/cpufreq.c	/^static const char *cpufreq_string_files[MAX_CPUFREQ_STRING_FILES] = {$/;"	v	file:
+cpufreq_test_tsc	debug/kernel/cpufreq-test_tsc.c	/^static int __init cpufreq_test_tsc(void)$/;"	f	file:
+cpufreq_value	lib/cpufreq.c	/^enum cpufreq_value {$/;"	g	file:
+cpufreq_value_files	lib/cpufreq.c	/^static const char *cpufreq_value_files[MAX_CPUFREQ_VALUE_READ_FILES] = {$/;"	v	file:
+cpufreq_write	lib/cpufreq.c	/^enum cpufreq_write {$/;"	g	file:
+cpufreq_write_files	lib/cpufreq.c	/^static const char *cpufreq_write_files[MAX_CPUFREQ_WRITE_FILES] = {$/;"	v	file:
+cpuid	debug/i386/dump_psb.c	/^	u_int32_t cpuid;$/;"	m	struct:pst_header	file:
+cpuid_core_info	lib/cpupower.h	/^struct cpuid_core_info {$/;"	s
+cpuid_eax	utils/helpers/helpers.h	/^static inline unsigned int cpuid_eax(unsigned int op) { return 0; };$/;"	f
+cpuid_ebx	utils/helpers/helpers.h	/^static inline unsigned int cpuid_ebx(unsigned int op) { return 0; };$/;"	f
+cpuid_ecx	utils/helpers/helpers.h	/^static inline unsigned int cpuid_ecx(unsigned int op) { return 0; };$/;"	f
+cpuid_edx	utils/helpers/helpers.h	/^static inline unsigned int cpuid_edx(unsigned int op) { return 0; };$/;"	f
+cpuid_func	utils/helpers/cpuid.c	24;"	d	file:
+cpuidle_cpu_output	utils/cpuidle-info.c	/^static void cpuidle_cpu_output(unsigned int cpu, int verbose)$/;"	f	file:
+cpuidle_cstates	utils/idle_monitor/cpuidle_sysfs.c	/^static cstate_t cpuidle_cstates[CPUIDLE_STATES_MAX];$/;"	v	file:
+cpuidle_exit	utils/cpuidle-info.c	/^static inline void cpuidle_exit(int fail)$/;"	f	file:
+cpuidle_general_output	utils/cpuidle-info.c	/^static void cpuidle_general_output(void)$/;"	f	file:
+cpuidle_get_count_percent	utils/idle_monitor/cpuidle_sysfs.c	/^static int cpuidle_get_count_percent(unsigned int id, double *percent,$/;"	f	file:
+cpuidle_get_driver	lib/cpuidle.c	/^char *cpuidle_get_driver(void)$/;"	f
+cpuidle_get_governor	lib/cpuidle.c	/^char *cpuidle_get_governor(void)$/;"	f
+cpuidle_is_state_disabled	lib/cpuidle.c	/^int cpuidle_is_state_disabled(unsigned int cpu,$/;"	f
+cpuidle_monitor	utils/idle_monitor/cpupower-monitor.h	/^struct cpuidle_monitor {$/;"	s
+cpuidle_register	utils/idle_monitor/cpuidle_sysfs.c	/^static struct cpuidle_monitor *cpuidle_register(void)$/;"	f	file:
+cpuidle_start	utils/idle_monitor/cpuidle_sysfs.c	/^static int cpuidle_start(void)$/;"	f	file:
+cpuidle_state_count	lib/cpuidle.c	/^unsigned int cpuidle_state_count(unsigned int cpu)$/;"	f
+cpuidle_state_desc	lib/cpuidle.c	/^char *cpuidle_state_desc(unsigned int cpu, unsigned int idlestate)$/;"	f
+cpuidle_state_disable	lib/cpuidle.c	/^int cpuidle_state_disable(unsigned int cpu,$/;"	f
+cpuidle_state_file_exists	lib/cpuidle.c	/^unsigned int cpuidle_state_file_exists(unsigned int cpu,$/;"	f	file:
+cpuidle_state_get_one_string	lib/cpuidle.c	/^static char *cpuidle_state_get_one_string(unsigned int cpu,$/;"	f	file:
+cpuidle_state_get_one_value	lib/cpuidle.c	/^unsigned long long cpuidle_state_get_one_value(unsigned int cpu,$/;"	f	file:
+cpuidle_state_latency	lib/cpuidle.c	/^unsigned long cpuidle_state_latency(unsigned int cpu,$/;"	f
+cpuidle_state_name	lib/cpuidle.c	/^char *cpuidle_state_name(unsigned int cpu, unsigned int idlestate)$/;"	f
+cpuidle_state_read_file	lib/cpuidle.c	/^unsigned int cpuidle_state_read_file(unsigned int cpu,$/;"	f	file:
+cpuidle_state_time	lib/cpuidle.c	/^unsigned long long cpuidle_state_time(unsigned int cpu,$/;"	f
+cpuidle_state_usage	lib/cpuidle.c	/^unsigned long cpuidle_state_usage(unsigned int cpu,$/;"	f
+cpuidle_state_write_file	lib/cpuidle.c	/^unsigned int cpuidle_state_write_file(unsigned int cpu,$/;"	f	file:
+cpuidle_stop	utils/idle_monitor/cpuidle_sysfs.c	/^static int cpuidle_stop(void)$/;"	f	file:
+cpuidle_string	lib/cpuidle.c	/^enum cpuidle_string {$/;"	g	file:
+cpuidle_string	utils/helpers/sysfs.c	/^enum cpuidle_string {$/;"	g	file:
+cpuidle_string_files	lib/cpuidle.c	/^static const char *cpuidle_string_files[MAX_CPUIDLE_STRING_FILES] = {$/;"	v	file:
+cpuidle_string_files	utils/helpers/sysfs.c	/^static const char *cpuidle_string_files[MAX_CPUIDLE_STRING_FILES] = {$/;"	v	file:
+cpuidle_sysfs_monitor	utils/idle_monitor/cpuidle_sysfs.c	/^struct cpuidle_monitor cpuidle_sysfs_monitor = {$/;"	v	typeref:struct:cpuidle_monitor
+cpuidle_sysfs_monitor	utils/idle_monitor/cpuidle_sysfs.c	/^struct cpuidle_monitor cpuidle_sysfs_monitor;$/;"	v	typeref:struct:cpuidle_monitor
+cpuidle_unregister	utils/idle_monitor/cpuidle_sysfs.c	/^void cpuidle_unregister(void)$/;"	f
+cpupower_cpu_info	utils/cpupower.c	/^struct cpupower_cpu_info cpupower_cpu_info;$/;"	v	typeref:struct:cpupower_cpu_info
+cpupower_cpu_info	utils/helpers/helpers.h	/^struct cpupower_cpu_info {$/;"	s
+cpupower_cpu_vendor	utils/helpers/helpers.h	/^enum cpupower_cpu_vendor {X86_VENDOR_UNKNOWN = 0, X86_VENDOR_INTEL,$/;"	g
+cpupower_is_cpu_online	lib/cpupower.c	/^int cpupower_is_cpu_online(unsigned int cpu)$/;"	f
+cpupower_topology	lib/cpupower.h	/^struct cpupower_topology {$/;"	s
+cpus_chosen	utils/cpupower.c	/^struct bitmask *cpus_chosen;$/;"	v	typeref:struct:bitmask
+create_plots	bench/cpufreq-bench_script.sh	/^function create_plots()$/;"	f
+cstate	utils/idle_monitor/cpupower-monitor.h	/^typedef struct cstate {$/;"	s
+cstate_t	utils/idle_monitor/cpupower-monitor.h	/^} cstate_t;$/;"	t	typeref:struct:cstate
+current_count	utils/idle_monitor/amd_fam14h_idle.c	/^static unsigned long long *current_count[AMD_FAM14H_STATE_NUM];$/;"	v	file:
+current_count	utils/idle_monitor/cpuidle_sysfs.c	/^static unsigned long long **current_count;$/;"	v	file:
+current_count	utils/idle_monitor/hsw_ext_idle.c	/^static unsigned long long *current_count[HSW_EXT_CSTATE_COUNT];$/;"	v	file:
+current_count	utils/idle_monitor/nhm_idle.c	/^static unsigned long long *current_count[NHM_CSTATE_COUNT];$/;"	v	file:
+current_count	utils/idle_monitor/snb_idle.c	/^static unsigned long long *current_count[SNB_CSTATE_COUNT];$/;"	v	file:
+cycles	bench/parse.h	/^	unsigned int cycles;	\/* calculation cycles with the same sleep\/load time *\/$/;"	m	struct:config
+dbg_time	utils/idle_monitor/amd_fam14h_idle.c	/^struct timespec dbg_time;$/;"	v	typeref:struct:timespec
+dbg_timediff	utils/idle_monitor/amd_fam14h_idle.c	/^long dbg_timediff;$/;"	v
+debug_output_one	utils/cpufreq-info.c	/^static void debug_output_one(unsigned int cpu)$/;"	f	file:
+decode	debug/i386/centrino-decode.c	/^static void decode (unsigned int msr)$/;"	f	file:
+decode_live	debug/i386/centrino-decode.c	/^static int decode_live(unsigned int cpu)$/;"	f	file:
+decode_psb	debug/i386/dump_psb.c	/^void decode_psb(char *p, int numpst)$/;"	f	file:
+decode_pst	debug/i386/dump_psb.c	/^decode_pst(char *p, int npstates)$/;"	f	file:
+decode_pstates	utils/helpers/amd.c	/^int decode_pstates(unsigned int cpu, unsigned int cpu_family,$/;"	f
+decode_pstates	utils/helpers/helpers.h	/^static inline int decode_pstates(unsigned int cpu, unsigned int cpu_family,$/;"	f
+def_units	utils/cpufreq-set.c	/^const struct freq_units def_units[] = {$/;"	v	typeref:struct:freq_units
+desc	utils/idle_monitor/cpupower-monitor.h	/^	char desc[CSTATE_DESC_LEN];$/;"	m	struct:cstate
+did	utils/helpers/amd.c	/^		unsigned did:3;$/;"	m	struct:msr_pstate::__anon1	file:
+did	utils/helpers/amd.c	/^		unsigned did:6;$/;"	m	struct:msr_pstate::__anon2	file:
+do_interval_measure	utils/idle_monitor/cpupower-monitor.c	/^int do_interval_measure(int i)$/;"	f
+do_new_policy	utils/cpufreq-set.c	/^static int do_new_policy(unsigned int cpu, struct cpufreq_policy *new_pol)$/;"	f	file:
+do_one_cpu	utils/cpufreq-set.c	/^static int do_one_cpu(unsigned int cpu, struct cpufreq_policy *new_pol,$/;"	f	file:
+do_register	utils/idle_monitor/cpupower-monitor.h	/^	struct cpuidle_monitor* (*do_register) (void);$/;"	m	struct:cpuidle_monitor	typeref:struct:cpuidle_monitor::do_register
+docdir	Makefile	/^docdir ?=       \/usr\/share\/doc\/packages\/cpupower$/;"	m
+dprint	utils/helpers/helpers.h	/^static inline void dprint(const char *fmt, ...) { }$/;"	f
+dprint	utils/helpers/helpers.h	50;"	d
+dprintf	bench/config.h	32;"	d
+dprintf	bench/config.h	34;"	d
+eax	utils/helpers/cpuid.c	/^cpuid_func(eax);$/;"	v
+ebx	utils/helpers/cpuid.c	/^cpuid_func(ebx);$/;"	v
+ecx	utils/helpers/cpuid.c	/^cpuid_func(ecx);$/;"	v
+edx	utils/helpers/cpuid.c	/^cpuid_func(edx);$/;"	v
+emit	utils/helpers/bitmask.c	/^static inline int emit(char *buf, int buflen, int rbot, int rtop, int len)$/;"	f	file:
+en	utils/helpers/amd.c	/^		unsigned en:1;$/;"	m	struct:msr_pstate::__anon1	file:
+en	utils/helpers/amd.c	/^		unsigned en:1;$/;"	m	struct:msr_pstate::__anon2	file:
+fam14h_get_count_percent	utils/idle_monitor/amd_fam14h_idle.c	/^static int fam14h_get_count_percent(unsigned int id, double *percent,$/;"	f	file:
+fam14h_nbp1_count	utils/idle_monitor/amd_fam14h_idle.c	/^static int fam14h_nbp1_count(unsigned int id, unsigned long long *count,$/;"	f	file:
+fam17h_bits	utils/helpers/amd.c	/^	} fam17h_bits;$/;"	m	union:msr_pstate	typeref:struct:msr_pstate::__anon2	file:
+family	utils/helpers/helpers.h	/^	unsigned int family;$/;"	m	struct:cpupower_cpu_info
+fid	utils/helpers/amd.c	/^		unsigned fid:6;$/;"	m	struct:msr_pstate::__anon1	file:
+fid	utils/helpers/amd.c	/^		unsigned fid:8;$/;"	m	struct:msr_pstate::__anon2	file:
+fid_to_mult	debug/i386/dump_psb.c	/^static const int fid_to_mult[32] = {$/;"	v	file:
+fill_string_with_spaces	utils/idle_monitor/cpupower-monitor.c	/^int fill_string_with_spaces(char *s, int n)$/;"	f
+find_freq_from_fid	debug/i386/powernow-k8-decode.c	/^static uint32_t find_freq_from_fid(uint32_t fid)$/;"	f	file:
+find_millivolts_from_vid	debug/i386/powernow-k8-decode.c	/^static uint32_t find_millivolts_from_vid(uint32_t vid)$/;"	f	file:
+first	lib/cpufreq.h	/^	struct cpufreq_affected_cpus *first;$/;"	m	struct:cpufreq_affected_cpus	typeref:struct:cpufreq_affected_cpus::cpufreq_affected_cpus
+first	lib/cpufreq.h	/^	struct cpufreq_available_frequencies *first;$/;"	m	struct:cpufreq_available_frequencies	typeref:struct:cpufreq_available_frequencies::cpufreq_available_frequencies
+first	lib/cpufreq.h	/^	struct cpufreq_available_governors *first;$/;"	m	struct:cpufreq_available_governors	typeref:struct:cpufreq_available_governors::cpufreq_available_governors
+first	lib/cpufreq.h	/^	struct cpufreq_stats *first;$/;"	m	struct:cpufreq_stats	typeref:struct:cpufreq_stats::cpufreq_stats
+fix_up_intel_idle_driver_name	utils/idle_monitor/cpuidle_sysfs.c	/^void fix_up_intel_idle_driver_name(char *tmp, int num)$/;"	f
+flags	debug/i386/dump_psb.c	/^	u_char flags;$/;"	m	struct:psb_header	file:
+fork_it	utils/idle_monitor/cpupower-monitor.c	/^int fork_it(char **argv)$/;"	f
+freq_units	utils/cpufreq-set.c	/^struct freq_units {$/;"	s	file:
+frequency	lib/cpufreq.h	/^	unsigned long frequency;$/;"	m	struct:cpufreq_available_frequencies
+frequency	lib/cpufreq.h	/^	unsigned long frequency;$/;"	m	struct:cpufreq_stats
+fsb	debug/i386/dump_psb.c	/^	u_char fsb;$/;"	m	struct:pst_header	file:
+fsb	debug/i386/dump_psb.c	/^static u_int fsb;$/;"	v	file:
+get_affected_cpus	utils/cpufreq-info.c	/^static int get_affected_cpus(unsigned int cpu)$/;"	f	file:
+get_available_governors	utils/cpufreq-info.c	/^static int get_available_governors(unsigned int cpu)$/;"	f	file:
+get_boost_mode	utils/cpufreq-info.c	/^static int get_boost_mode(unsigned int cpu)$/;"	f	file:
+get_cof	utils/helpers/amd.c	/^static int get_cof(int family, union msr_pstate pstate)$/;"	f	file:
+get_count	utils/idle_monitor/cpupower-monitor.h	/^	int (*get_count)(unsigned int self_id, unsigned long long *count,$/;"	m	struct:cstate
+get_count_percent	utils/idle_monitor/cpupower-monitor.h	/^	int (*get_count_percent)(unsigned int self_id, double *percent,$/;"	m	struct:cstate
+get_cpu_info	utils/helpers/cpuid.c	/^int get_cpu_info(struct cpupower_cpu_info *cpu_info)$/;"	f
+get_cpu_topology	lib/cpupower.c	/^int get_cpu_topology(struct cpupower_topology *cpu_top)$/;"	f
+get_did	utils/helpers/amd.c	/^static int get_did(int family, union msr_pstate pstate)$/;"	f	file:
+get_driver	utils/cpufreq-info.c	/^static int get_driver(unsigned int cpu)$/;"	f	file:
+get_fidvid	debug/i386/powernow-k8-decode.c	/^static int get_fidvid(uint32_t cpu, uint32_t *fid, uint32_t *vid)$/;"	f	file:
+get_freq_hardware	utils/cpufreq-info.c	/^static int get_freq_hardware(unsigned int cpu, unsigned int human)$/;"	f	file:
+get_freq_kernel	utils/cpufreq-info.c	/^static int get_freq_kernel(unsigned int cpu, unsigned int human)$/;"	f	file:
+get_freq_stats	utils/cpufreq-info.c	/^static int get_freq_stats(unsigned int cpu, unsigned int human)$/;"	f	file:
+get_hardware_limits	utils/cpufreq-info.c	/^static int get_hardware_limits(unsigned int cpu, unsigned int human)$/;"	f	file:
+get_latency	utils/cpufreq-info.c	/^static int get_latency(unsigned int cpu, unsigned int human)$/;"	f	file:
+get_policy	utils/cpufreq-info.c	/^static int get_policy(unsigned int cpu)$/;"	f	file:
+get_related_cpus	utils/cpufreq-info.c	/^static int get_related_cpus(unsigned int cpu)$/;"	f	file:
+get_time	bench/system.c	/^long long int get_time()$/;"	f
+gettext_noop	utils/helpers/helpers.h	24;"	d
+governor	bench/parse.h	/^	char governor[15];	\/* cpufreq governor *\/$/;"	m	struct:config
+governor	lib/cpufreq.h	/^	char *governor;$/;"	m	struct:cpufreq_available_governors
+governor	lib/cpufreq.h	/^	char *governor;$/;"	m	struct:cpufreq_policy
+handle_options	utils/cpupower.c	/^static void handle_options(int *argc, const char ***argv)$/;"	f	file:
+howmany	utils/helpers/bitmask.c	12;"	d	file:
+hsw_ext_cstates	utils/idle_monitor/hsw_ext_idle.c	/^static cstate_t hsw_ext_cstates[HSW_EXT_CSTATE_COUNT] = {$/;"	v	file:
+hsw_ext_get_count	utils/idle_monitor/hsw_ext_idle.c	/^static int hsw_ext_get_count(enum intel_hsw_ext_id id, unsigned long long *val,$/;"	f	file:
+hsw_ext_get_count_percent	utils/idle_monitor/hsw_ext_idle.c	/^static int hsw_ext_get_count_percent(unsigned int id, double *percent,$/;"	f	file:
+hsw_ext_register	utils/idle_monitor/hsw_ext_idle.c	/^static struct cpuidle_monitor *hsw_ext_register(void)$/;"	f	file:
+hsw_ext_start	utils/idle_monitor/hsw_ext_idle.c	/^static int hsw_ext_start(void)$/;"	f	file:
+hsw_ext_stop	utils/idle_monitor/hsw_ext_idle.c	/^static int hsw_ext_stop(void)$/;"	f	file:
+hsw_ext_unregister	utils/idle_monitor/hsw_ext_idle.c	/^void hsw_ext_unregister(void)$/;"	f
+hw_states	utils/idle_monitor/cpupower-monitor.h	/^	cstate_t *hw_states;$/;"	m	struct:cpuidle_monitor
+hw_states_num	utils/idle_monitor/cpupower-monitor.h	/^	int hw_states_num;$/;"	m	struct:cpuidle_monitor
+id	utils/idle_monitor/cpupower-monitor.h	/^	int  id;$/;"	m	struct:cstate
+idddiv	utils/helpers/amd.c	/^		unsigned idddiv:2;$/;"	m	struct:msr_pstate::__anon1	file:
+idddiv	utils/helpers/amd.c	/^		unsigned idddiv:2;$/;"	m	struct:msr_pstate::__anon2	file:
+iddval	utils/helpers/amd.c	/^		unsigned iddval:8;$/;"	m	struct:msr_pstate::__anon1	file:
+iddval	utils/helpers/amd.c	/^		unsigned iddval:8;$/;"	m	struct:msr_pstate::__anon2	file:
+idlestate_string	lib/cpuidle.c	/^enum idlestate_string {$/;"	g	file:
+idlestate_string	utils/helpers/sysfs.c	/^enum idlestate_string {$/;"	g	file:
+idlestate_string_files	lib/cpuidle.c	/^static const char *idlestate_string_files[MAX_IDLESTATE_STRING_FILES] = {$/;"	v	file:
+idlestate_string_files	utils/helpers/sysfs.c	/^static const char *idlestate_string_files[MAX_IDLESTATE_STRING_FILES] = {$/;"	v	file:
+idlestate_value	lib/cpuidle.c	/^enum idlestate_value {$/;"	g	file:
+idlestate_value	utils/helpers/sysfs.c	/^enum idlestate_value {$/;"	g	file:
+idlestate_value_files	lib/cpuidle.c	/^static const char *idlestate_value_files[MAX_IDLESTATE_VALUE_FILES] = {$/;"	v	file:
+idlestate_value_files	utils/helpers/sysfs.c	/^static const char *idlestate_value_files[MAX_IDLESTATE_VALUE_FILES] = {$/;"	v	file:
+includedir	Makefile	/^includedir ?=	\/usr\/include$/;"	m
+info_opts	debug/i386/dump_psb.c	/^static struct option info_opts[] = {$/;"	v	typeref:struct:option	file:
+info_opts	utils/cpufreq-info.c	/^static struct option info_opts[] = {$/;"	v	typeref:struct:option	file:
+info_opts	utils/cpuidle-info.c	/^static struct option info_opts[] = {$/;"	v	typeref:struct:option	file:
+info_opts	utils/cpuidle-set.c	/^static struct option info_opts[] = {$/;"	v	typeref:struct:option	file:
+init_maxfreq_mode	utils/idle_monitor/mperf_monitor.c	/^static int init_maxfreq_mode(void)$/;"	f	file:
+intel_hsw_ext_id	utils/idle_monitor/hsw_ext_idle.c	/^enum intel_hsw_ext_id { PC8 = 0, PC9, PC10, HSW_EXT_CSTATE_COUNT,$/;"	g	file:
+intel_hsw_ext_monitor	utils/idle_monitor/hsw_ext_idle.c	/^struct cpuidle_monitor intel_hsw_ext_monitor = {$/;"	v	typeref:struct:cpuidle_monitor
+intel_hsw_ext_monitor	utils/idle_monitor/hsw_ext_idle.c	/^struct cpuidle_monitor intel_hsw_ext_monitor;$/;"	v	typeref:struct:cpuidle_monitor
+intel_nhm_id	utils/idle_monitor/nhm_idle.c	/^enum intel_nhm_id { C3 = 0, C6, PC3, PC6, TSC = 0xFFFF };$/;"	g	file:
+intel_nhm_monitor	utils/idle_monitor/nhm_idle.c	/^struct cpuidle_monitor intel_nhm_monitor = {$/;"	v	typeref:struct:cpuidle_monitor
+intel_nhm_monitor	utils/idle_monitor/nhm_idle.c	/^struct cpuidle_monitor intel_nhm_monitor;$/;"	v	typeref:struct:cpuidle_monitor
+intel_nhm_register	utils/idle_monitor/nhm_idle.c	/^struct cpuidle_monitor *intel_nhm_register(void)$/;"	f
+intel_nhm_unregister	utils/idle_monitor/nhm_idle.c	/^void intel_nhm_unregister(void)$/;"	f
+intel_snb_id	utils/idle_monitor/snb_idle.c	/^enum intel_snb_id { C7 = 0, PC2, PC7, SNB_CSTATE_COUNT, TSC = 0xFFFF };$/;"	g	file:
+intel_snb_monitor	utils/idle_monitor/snb_idle.c	/^struct cpuidle_monitor intel_snb_monitor = {$/;"	v	typeref:struct:cpuidle_monitor
+intel_snb_monitor	utils/idle_monitor/snb_idle.c	/^struct cpuidle_monitor intel_snb_monitor;$/;"	v	typeref:struct:cpuidle_monitor
+interval	utils/idle_monitor/cpupower-monitor.c	/^static int interval = 1;$/;"	v	file:
+is_nbp1_capable	utils/idle_monitor/amd_fam14h_idle.c	/^static int is_nbp1_capable(void)$/;"	f	file:
+is_online	lib/cpupower.h	/^	unsigned int is_online:1;$/;"	m	struct:cpuid_core_info
+is_valid	utils/idle_monitor/hsw_ext_idle.c	/^static int *is_valid;$/;"	v	file:
+is_valid	utils/idle_monitor/mperf_monitor.c	/^static int *is_valid;$/;"	v	file:
+is_valid	utils/idle_monitor/nhm_idle.c	/^static int *is_valid;$/;"	v	file:
+is_valid	utils/idle_monitor/snb_idle.c	/^static int *is_valid;$/;"	v	file:
+libdir	Makefile	/^libdir ?=	\/usr\/lib$/;"	m
+list	utils/idle_monitor/cpupower-monitor.c	/^enum operation_mode_e { list = 1, show, show_all };$/;"	e	enum:operation_mode_e	file:
+list_monitors	utils/idle_monitor/cpupower-monitor.c	/^void list_monitors(void)$/;"	f
+load	bench/parse.h	/^	long load;		\/* load time in µs *\/$/;"	m	struct:config
+load_step	bench/parse.h	/^	long load_step;		\/* time value which changes the$/;"	m	struct:config
+localedir	Makefile	/^localedir ?=	\/usr\/share\/locale$/;"	m
+long_options	bench/main.c	/^static struct option long_options[] = {$/;"	v	typeref:struct:option	file:
+longsperbits	utils/helpers/bitmask.c	15;"	d	file:
+main	bench/main.c	/^int main(int argc, char **argv)$/;"	f
+main	debug/i386/centrino-decode.c	/^int main (int argc, char **argv)$/;"	f
+main	debug/i386/dump_psb.c	/^main(int argc, char *argv[])$/;"	f
+main	debug/i386/intel_gsic.c	/^int main (void)$/;"	f
+main	debug/i386/powernow-k8-decode.c	/^int main (int argc, char *argv[])$/;"	f
+main	utils/cpupower.c	/^	int (*main)(int, const char **);$/;"	m	struct:cmd_struct	file:
+main	utils/cpupower.c	/^int main(int argc, const char *argv[])$/;"	f
+mandir	Makefile	/^mandir ?=	\/usr\/man$/;"	m
+maskp	utils/helpers/bitmask.h	/^	unsigned long *maskp;$/;"	m	struct:bitmask
+max	lib/cpufreq.h	/^	unsigned long max;$/;"	m	struct:cpufreq_policy
+max	utils/helpers/bitmask.c	17;"	d	file:
+max_freq_mode	utils/idle_monitor/mperf_monitor.c	/^static int max_freq_mode;$/;"	v	file:
+max_frequency	utils/idle_monitor/mperf_monitor.c	/^static unsigned long max_frequency;$/;"	v	file:
+maxfid	debug/i386/dump_psb.c	/^	u_char maxfid;$/;"	m	struct:pst_header	file:
+measure	bench/cpufreq-bench_script.sh	/^function measure()$/;"	f
+min	lib/cpufreq.h	/^	unsigned long min;$/;"	m	struct:cpufreq_policy
+mode	utils/idle_monitor/cpupower-monitor.c	/^static int mode;$/;"	v	file:
+model	utils/helpers/helpers.h	/^	unsigned int model;$/;"	m	struct:cpupower_cpu_info
+monitors	utils/idle_monitor/cpupower-monitor.c	/^static struct cpuidle_monitor *monitors[MONITORS_MAX];$/;"	v	typeref:struct:cpuidle_monitor	file:
+mperf_cstates	utils/idle_monitor/mperf_monitor.c	/^static cstate_t mperf_cstates[MPERF_CSTATE_COUNT] = {$/;"	v	file:
+mperf_current_count	utils/idle_monitor/mperf_monitor.c	/^static unsigned long long *mperf_current_count;$/;"	v	file:
+mperf_get_count_freq	utils/idle_monitor/mperf_monitor.c	/^static int mperf_get_count_freq(unsigned int id, unsigned long long *count,$/;"	f	file:
+mperf_get_count_percent	utils/idle_monitor/mperf_monitor.c	/^static int mperf_get_count_percent(unsigned int id, double *percent,$/;"	f	file:
+mperf_get_tsc	utils/idle_monitor/mperf_monitor.c	/^static int mperf_get_tsc(unsigned long long *tsc)$/;"	f	file:
+mperf_id	utils/idle_monitor/mperf_monitor.c	/^enum mperf_id { C0 = 0, Cx, AVG_FREQ, MPERF_CSTATE_COUNT };$/;"	g	file:
+mperf_init_stats	utils/idle_monitor/mperf_monitor.c	/^static int mperf_init_stats(unsigned int cpu)$/;"	f	file:
+mperf_measure_stats	utils/idle_monitor/mperf_monitor.c	/^static int mperf_measure_stats(unsigned int cpu)$/;"	f	file:
+mperf_monitor	utils/idle_monitor/mperf_monitor.c	/^struct cpuidle_monitor mperf_monitor = {$/;"	v	typeref:struct:cpuidle_monitor
+mperf_monitor	utils/idle_monitor/mperf_monitor.c	/^struct cpuidle_monitor mperf_monitor;$/;"	v	typeref:struct:cpuidle_monitor
+mperf_previous_count	utils/idle_monitor/mperf_monitor.c	/^static unsigned long long *mperf_previous_count;$/;"	v	file:
+mperf_register	utils/idle_monitor/mperf_monitor.c	/^struct cpuidle_monitor *mperf_register(void)$/;"	f
+mperf_start	utils/idle_monitor/mperf_monitor.c	/^static int mperf_start(void)$/;"	f	file:
+mperf_stop	utils/idle_monitor/mperf_monitor.c	/^static int mperf_stop(void)$/;"	f	file:
+mperf_unregister	utils/idle_monitor/mperf_monitor.c	/^void mperf_unregister(void)$/;"	f
+msr_intel_get_perf_bias	utils/helpers/helpers.h	/^static inline int msr_intel_get_perf_bias(unsigned int cpu)$/;"	f
+msr_intel_get_perf_bias	utils/helpers/msr.c	/^int msr_intel_get_perf_bias(unsigned int cpu)$/;"	f
+msr_intel_get_turbo_ratio	utils/helpers/helpers.h	/^static inline unsigned long long msr_intel_get_turbo_ratio(unsigned int cpu)$/;"	f
+msr_intel_get_turbo_ratio	utils/helpers/msr.c	/^unsigned long long msr_intel_get_turbo_ratio(unsigned int cpu)$/;"	f
+msr_intel_set_perf_bias	utils/helpers/helpers.h	/^static inline int msr_intel_set_perf_bias(unsigned int cpu, unsigned int val)$/;"	f
+msr_intel_set_perf_bias	utils/helpers/msr.c	/^int msr_intel_set_perf_bias(unsigned int cpu, unsigned int val)$/;"	f
+msr_pstate	utils/helpers/amd.c	/^union msr_pstate {$/;"	u	file:
+name	utils/idle_monitor/cpupower-monitor.h	/^	char name[CSTATE_NAME_LEN];$/;"	m	struct:cstate
+name	utils/idle_monitor/cpupower-monitor.h	/^	char name[MONITOR_NAME_LEN];$/;"	m	struct:cpuidle_monitor
+name_len	utils/idle_monitor/cpupower-monitor.h	/^	int name_len;$/;"	m	struct:cpuidle_monitor
+nbdid	utils/helpers/amd.c	/^		unsigned nbdid:1;$/;"	m	struct:msr_pstate::__anon1	file:
+nbp1_entered	utils/idle_monitor/amd_fam14h_idle.c	/^static int nbp1_entered;$/;"	v	file:
+nbvid	utils/helpers/amd.c	/^		unsigned nbvid:7;$/;"	m	struct:msr_pstate::__anon1	file:
+needs_root	utils/cpupower.c	/^	int needs_root;$/;"	m	struct:cmd_struct	file:
+needs_root	utils/idle_monitor/cpupower-monitor.h	/^	int needs_root;$/;"	m	struct:cpuidle_monitor
+next	lib/cpufreq.h	/^	struct cpufreq_affected_cpus *next;$/;"	m	struct:cpufreq_affected_cpus	typeref:struct:cpufreq_affected_cpus::cpufreq_affected_cpus
+next	lib/cpufreq.h	/^	struct cpufreq_available_frequencies *next;$/;"	m	struct:cpufreq_available_frequencies	typeref:struct:cpufreq_available_frequencies::cpufreq_available_frequencies
+next	lib/cpufreq.h	/^	struct cpufreq_available_governors *next;$/;"	m	struct:cpufreq_available_governors	typeref:struct:cpufreq_available_governors::cpufreq_available_governors
+next	lib/cpufreq.h	/^	struct cpufreq_stats *next;$/;"	m	struct:cpufreq_stats	typeref:struct:cpufreq_stats::cpufreq_stats
+nexttoken	utils/helpers/bitmask.c	/^static const char *nexttoken(const char *q,  int sep)$/;"	f	file:
+nhm_cstates	utils/idle_monitor/nhm_idle.c	/^static cstate_t nhm_cstates[NHM_CSTATE_COUNT] = {$/;"	v	file:
+nhm_get_count	utils/idle_monitor/nhm_idle.c	/^static int nhm_get_count(enum intel_nhm_id id, unsigned long long *val,$/;"	f	file:
+nhm_get_count_percent	utils/idle_monitor/nhm_idle.c	/^static int nhm_get_count_percent(unsigned int id, double *percent,$/;"	f	file:
+nhm_start	utils/idle_monitor/nhm_idle.c	/^static int nhm_start(void)$/;"	f	file:
+nhm_stop	utils/idle_monitor/nhm_idle.c	/^static int nhm_stop(void)$/;"	f	file:
+no_rounding	utils/cpufreq-info.c	/^static int no_rounding;$/;"	v	file:
+numpst	debug/i386/dump_psb.c	/^	u_char numpst;$/;"	m	struct:psb_header	file:
+numpstates	debug/i386/dump_psb.c	/^	u_char numpstates;$/;"	m	struct:pst_header	file:
+obj-m	debug/kernel/Makefile	/^obj-m	:=$/;"	m
+operation_mode_e	utils/idle_monitor/cpupower-monitor.c	/^enum operation_mode_e { list = 1, show, show_all };$/;"	g	file:
+output	bench/parse.h	/^	FILE *output;		\/* logfile *\/$/;"	m	struct:config
+output_filename	bench/parse.h	/^	char *output_filename;	\/* logfile name, must be freed at the end$/;"	m	struct:config
+overflow_s	utils/idle_monitor/cpupower-monitor.h	/^	unsigned int overflow_s;$/;"	m	struct:cpuidle_monitor
+parse_monitor_param	utils/idle_monitor/cpupower-monitor.c	/^static void parse_monitor_param(char *param)$/;"	f	file:
+pci_acc	utils/idle_monitor/amd_fam14h_idle.c	/^static struct pci_access *pci_acc;$/;"	v	typeref:struct:pci_access	file:
+pci_acc_init	utils/helpers/pci.c	/^struct pci_dev *pci_acc_init(struct pci_access **pacc, int domain, int bus,$/;"	f
+pci_slot_func_init	utils/helpers/pci.c	/^struct pci_dev *pci_slot_func_init(struct pci_access **pacc, int slot,$/;"	f
+pkg	lib/cpupower.h	/^	int pkg;$/;"	m	struct:cpuid_core_info
+pkgs	lib/cpupower.h	/^	unsigned int pkgs;$/;"	m	struct:cpupower_topology
+pm_tmr_ioport	debug/kernel/cpufreq-test_tsc.c	/^static int pm_tmr_ioport = 0;$/;"	v	file:
+power_of_ten	utils/cpufreq-set.c	/^	int		power_of_ten;$/;"	m	struct:freq_units	file:
+power_range_e	utils/idle_monitor/cpupower-monitor.h	/^enum power_range_e {$/;"	g
+prepare_config	bench/parse.c	/^int prepare_config(const char *path, struct config *config)$/;"	f
+prepare_default_config	bench/parse.c	/^struct config *prepare_default_config()$/;"	f
+prepare_output	bench/parse.c	/^FILE *prepare_output(const char *dirname)$/;"	f
+prepare_system	bench/system.c	/^void prepare_system(const struct config *config)$/;"	f
+prepare_user	bench/system.c	/^void prepare_user(const struct config *config)$/;"	f
+previous_count	utils/idle_monitor/amd_fam14h_idle.c	/^static unsigned long long *previous_count[AMD_FAM14H_STATE_NUM];$/;"	v	file:
+previous_count	utils/idle_monitor/cpuidle_sysfs.c	/^static unsigned long long **previous_count;$/;"	v	file:
+previous_count	utils/idle_monitor/hsw_ext_idle.c	/^static unsigned long long *previous_count[HSW_EXT_CSTATE_COUNT];$/;"	v	file:
+previous_count	utils/idle_monitor/nhm_idle.c	/^static unsigned long long *previous_count[NHM_CSTATE_COUNT];$/;"	v	file:
+previous_count	utils/idle_monitor/snb_idle.c	/^static unsigned long long *previous_count[SNB_CSTATE_COUNT];$/;"	v	file:
+print_duration	utils/cpufreq-info.c	/^static void print_duration(unsigned long duration)$/;"	f	file:
+print_error	utils/cpufreq-set.c	/^static void print_error(void)$/;"	f	file:
+print_header	utils/idle_monitor/cpupower-monitor.c	/^void print_header(int topology_depth)$/;"	f
+print_help	debug/i386/dump_psb.c	/^void print_help(void)$/;"	f
+print_help	utils/cpupower.c	/^static void print_help(void)$/;"	f	file:
+print_man_page	utils/cpupower.c	/^static int print_man_page(const char *subpage)$/;"	f	file:
+print_n_spaces	utils/idle_monitor/cpupower-monitor.c	/^void print_n_spaces(int n)$/;"	f
+print_overflow_err	utils/idle_monitor/cpupower-monitor.h	61;"	d
+print_results	utils/idle_monitor/cpupower-monitor.c	/^void print_results(int topology_depth, int cpu)$/;"	f
+print_speed	utils/cpufreq-info.c	/^static void print_speed(unsigned long speed)$/;"	f	file:
+print_unknown_arg	utils/cpufreq-set.c	/^static void print_unknown_arg(void)$/;"	f	file:
+print_version	utils/cpupower.c	/^static void print_version(void)$/;"	f	file:
+print_wrong_arg_exit	utils/cpupower-info.c	/^static void print_wrong_arg_exit(void)$/;"	f	file:
+print_wrong_arg_exit	utils/cpupower-set.c	/^static void print_wrong_arg_exit(void)$/;"	f	file:
+print_wrong_arg_exit	utils/idle_monitor/cpupower-monitor.c	/^static void print_wrong_arg_exit(void)$/;"	f	file:
+prio	bench/parse.h	/^	} prio;$/;"	m	struct:config	typeref:enum:config::sched_prio
+proc_cpufreq_output	utils/cpufreq-info.c	/^static void proc_cpufreq_output(void)$/;"	f	file:
+proc_cpuidle_cpu_output	utils/cpuidle-info.c	/^static void proc_cpuidle_cpu_output(unsigned int cpu)$/;"	f	file:
+progname	utils/idle_monitor/cpupower-monitor.c	/^static char *progname;$/;"	v	file:
+psb_header	debug/i386/dump_psb.c	/^struct psb_header {$/;"	s	file:
+pst_header	debug/i386/dump_psb.c	/^struct pst_header {$/;"	s	file:
+range	utils/idle_monitor/cpupower-monitor.h	/^	enum power_range_e range;$/;"	m	struct:cstate	typeref:enum:cstate::power_range_e
+range_abbr	utils/idle_monitor/cpupower-monitor.c	/^static char range_abbr[RANGE_MAX] = { 'T', 'C', 'P', 'M', };$/;"	v	file:
+rdmsr	debug/i386/centrino-decode.c	/^static int rdmsr(unsigned int cpu, unsigned int msr,$/;"	f	file:
+read_msr	utils/helpers/helpers.h	/^static inline int read_msr(int cpu, unsigned int idx, unsigned long long *val)$/;"	f
+read_msr	utils/helpers/msr.c	/^int read_msr(int cpu, unsigned int idx, unsigned long long *val)$/;"	f
+read_pmtmr	debug/kernel/cpufreq-test_tsc.c	/^static u32 read_pmtmr(void)$/;"	f	file:
+relevant	debug/i386/dump_psb.c	/^static long relevant;$/;"	v	file:
+res1	debug/i386/dump_psb.c	/^	u_char res1;$/;"	m	struct:psb_header	file:
+res1	utils/helpers/amd.c	/^		unsigned res1:30;$/;"	m	struct:msr_pstate::__anon2	file:
+res1	utils/helpers/amd.c	/^		unsigned res1:6;$/;"	m	struct:msr_pstate::__anon1	file:
+res2	utils/helpers/amd.c	/^		unsigned res2:2;$/;"	m	struct:msr_pstate::__anon1	file:
+res3	utils/helpers/amd.c	/^		unsigned res3:21;$/;"	m	struct:msr_pstate::__anon1	file:
+rounds	bench/parse.h	/^	unsigned int rounds;	\/* calculation rounds with iterated sleep\/load time *\/$/;"	m	struct:config
+run_as_root	utils/cpupower.c	/^int run_as_root;$/;"	v
+sbindir	Makefile	/^sbindir ?=	\/usr\/sbin$/;"	m
+scan_was_ok	utils/helpers/bitmask.c	/^static int scan_was_ok(int sret, char nextc, const char *ok_next_chars)$/;"	f	file:
+sched_prio	bench/parse.h	/^	enum sched_prio		\/* possible scheduler priorities *\/$/;"	g	struct:config
+set_cpu_affinity	bench/system.c	/^int set_cpu_affinity(unsigned int cpu)$/;"	f
+set_cpufreq_governor	bench/system.c	/^int set_cpufreq_governor(char *governor, unsigned int cpu)$/;"	f
+set_opts	utils/cpufreq-set.c	/^static struct option set_opts[] = {$/;"	v	typeref:struct:option	file:
+set_opts	utils/cpupower-info.c	/^static struct option set_opts[] = {$/;"	v	typeref:struct:option	file:
+set_opts	utils/cpupower-set.c	/^static struct option set_opts[] = {$/;"	v	typeref:struct:option	file:
+set_process_priority	bench/system.c	/^int set_process_priority(int priority)$/;"	f
+settlingtime	debug/i386/dump_psb.c	/^	u_short settlingtime;$/;"	m	struct:psb_header	file:
+sgtc	debug/i386/dump_psb.c	/^static u_int sgtc;$/;"	v	file:
+show	utils/idle_monitor/cpupower-monitor.c	/^enum operation_mode_e { list = 1, show, show_all };$/;"	e	enum:operation_mode_e	file:
+show_all	utils/idle_monitor/cpupower-monitor.c	/^enum operation_mode_e { list = 1, show, show_all };$/;"	e	enum:operation_mode_e	file:
+show_monitors_param	utils/idle_monitor/cpupower-monitor.c	/^static char *show_monitors_param;$/;"	v	file:
+show_progress	bench/benchmark.c	29;"	d	file:
+signature	debug/i386/dump_psb.c	/^	char signature[10];$/;"	m	struct:psb_header	file:
+size	utils/helpers/bitmask.h	/^	unsigned int size;$/;"	m	struct:bitmask
+sleep	bench/parse.h	/^	long sleep;		\/* sleep time in µs *\/$/;"	m	struct:config
+sleep_step	bench/parse.h	/^	long sleep_step;	\/* time value which changes the$/;"	m	struct:config
+snb_cstates	utils/idle_monitor/snb_idle.c	/^static cstate_t snb_cstates[SNB_CSTATE_COUNT] = {$/;"	v	file:
+snb_get_count	utils/idle_monitor/snb_idle.c	/^static int snb_get_count(enum intel_snb_id id, unsigned long long *val,$/;"	f	file:
+snb_get_count_percent	utils/idle_monitor/snb_idle.c	/^static int snb_get_count_percent(unsigned int id, double *percent,$/;"	f	file:
+snb_register	utils/idle_monitor/snb_idle.c	/^static struct cpuidle_monitor *snb_register(void)$/;"	f	file:
+snb_start	utils/idle_monitor/snb_idle.c	/^static int snb_start(void)$/;"	f	file:
+snb_stop	utils/idle_monitor/snb_idle.c	/^static int snb_stop(void)$/;"	f	file:
+snb_unregister	utils/idle_monitor/snb_idle.c	/^void snb_unregister(void)$/;"	f
+start	utils/idle_monitor/cpupower-monitor.h	/^	int (*start) (void);$/;"	m	struct:cpuidle_monitor
+start_benchmark	bench/benchmark.c	/^void start_benchmark(struct config *config)$/;"	f
+start_time	utils/idle_monitor/amd_fam14h_idle.c	/^struct timespec start_time;$/;"	v	typeref:struct:timespec
+start_time	utils/idle_monitor/cpuidle_sysfs.c	/^struct timespec start_time;$/;"	v	typeref:struct:timespec
+startvid	debug/i386/dump_psb.c	/^	u_char startvid;$/;"	m	struct:pst_header	file:
+stepping	utils/helpers/helpers.h	/^	unsigned int stepping;$/;"	m	struct:cpupower_cpu_info
+stop	utils/idle_monitor/cpupower-monitor.h	/^	int (*stop) (void);$/;"	m	struct:cpuidle_monitor
+str_unit	utils/cpufreq-set.c	/^	char		*str_unit;$/;"	m	struct:freq_units	file:
+string_to_frequency	utils/cpufreq-set.c	/^static unsigned long string_to_frequency(const char *str)$/;"	f	file:
+string_to_prio	bench/parse.c	/^enum sched_prio string_to_prio(const char *str)$/;"	f
+sysfs_cpufreq_get_one_string	lib/cpufreq.c	/^static char *sysfs_cpufreq_get_one_string(unsigned int cpu,$/;"	f	file:
+sysfs_cpufreq_get_one_value	lib/cpufreq.c	/^static unsigned long sysfs_cpufreq_get_one_value(unsigned int cpu,$/;"	f	file:
+sysfs_cpufreq_read_file	lib/cpufreq.c	/^static unsigned int sysfs_cpufreq_read_file(unsigned int cpu, const char *fname,$/;"	f	file:
+sysfs_cpufreq_write_file	lib/cpufreq.c	/^static unsigned int sysfs_cpufreq_write_file(unsigned int cpu,$/;"	f	file:
+sysfs_cpufreq_write_one_value	lib/cpufreq.c	/^static int sysfs_cpufreq_write_one_value(unsigned int cpu,$/;"	f	file:
+sysfs_cpuidle_get_one_string	lib/cpuidle.c	/^static char *sysfs_cpuidle_get_one_string(enum cpuidle_string which)$/;"	f	file:
+sysfs_cpuidle_get_one_string	utils/helpers/sysfs.c	/^static char *sysfs_cpuidle_get_one_string(enum cpuidle_string which)$/;"	f	file:
+sysfs_cpuidle_read_file	lib/cpuidle.c	/^static unsigned int sysfs_cpuidle_read_file(const char *fname, char *buf,$/;"	f	file:
+sysfs_cpuidle_read_file	utils/helpers/sysfs.c	/^static unsigned int sysfs_cpuidle_read_file(const char *fname, char *buf,$/;"	f	file:
+sysfs_get_cpu_list	lib/cpufreq.c	/^static struct cpufreq_affected_cpus *sysfs_get_cpu_list(unsigned int cpu,$/;"	f	file:
+sysfs_get_cpuidle_driver	utils/helpers/sysfs.c	/^char *sysfs_get_cpuidle_driver(void)$/;"	f
+sysfs_get_cpuidle_governor	utils/helpers/sysfs.c	/^char *sysfs_get_cpuidle_governor(void)$/;"	f
+sysfs_get_idlestate_count	utils/helpers/sysfs.c	/^unsigned int sysfs_get_idlestate_count(unsigned int cpu)$/;"	f
+sysfs_get_idlestate_desc	utils/helpers/sysfs.c	/^char *sysfs_get_idlestate_desc(unsigned int cpu, unsigned int idlestate)$/;"	f
+sysfs_get_idlestate_latency	utils/helpers/sysfs.c	/^unsigned long sysfs_get_idlestate_latency(unsigned int cpu,$/;"	f
+sysfs_get_idlestate_name	utils/helpers/sysfs.c	/^char *sysfs_get_idlestate_name(unsigned int cpu, unsigned int idlestate)$/;"	f
+sysfs_get_idlestate_time	utils/helpers/sysfs.c	/^unsigned long long sysfs_get_idlestate_time(unsigned int cpu,$/;"	f
+sysfs_get_idlestate_usage	utils/helpers/sysfs.c	/^unsigned long sysfs_get_idlestate_usage(unsigned int cpu,$/;"	f
+sysfs_get_sched	utils/helpers/sysfs.c	/^int sysfs_get_sched(const char *smt_mc)$/;"	f
+sysfs_idlestate_disable	utils/helpers/sysfs.c	/^int sysfs_idlestate_disable(unsigned int cpu,$/;"	f
+sysfs_idlestate_file_exists	utils/helpers/sysfs.c	/^unsigned int sysfs_idlestate_file_exists(unsigned int cpu,$/;"	f
+sysfs_idlestate_get_one_string	utils/helpers/sysfs.c	/^static char *sysfs_idlestate_get_one_string(unsigned int cpu,$/;"	f	file:
+sysfs_idlestate_get_one_value	utils/helpers/sysfs.c	/^static unsigned long long sysfs_idlestate_get_one_value(unsigned int cpu,$/;"	f	file:
+sysfs_idlestate_read_file	utils/helpers/sysfs.c	/^unsigned int sysfs_idlestate_read_file(unsigned int cpu, unsigned int idlestate,$/;"	f
+sysfs_idlestate_write_file	utils/helpers/sysfs.c	/^unsigned int sysfs_idlestate_write_file(unsigned int cpu,$/;"	f	file:
+sysfs_is_cpu_online	utils/helpers/sysfs.c	/^int sysfs_is_cpu_online(unsigned int cpu)$/;"	f
+sysfs_is_idlestate_disabled	utils/helpers/sysfs.c	/^int sysfs_is_idlestate_disabled(unsigned int cpu,$/;"	f
+sysfs_read_file	lib/cpupower.c	/^unsigned int sysfs_read_file(const char *path, char *buf, size_t buflen)$/;"	f
+sysfs_set_sched	utils/helpers/sysfs.c	/^int sysfs_set_sched(const char *smt_mc, int val)$/;"	f
+sysfs_topology_read_file	lib/cpupower.c	/^static int sysfs_topology_read_file(unsigned int cpu, const char *fname, int *result)$/;"	f	file:
+threads	lib/cpupower.h	/^	unsigned int threads; \/* per core *\/$/;"	m	struct:cpupower_topology
+time_end	utils/idle_monitor/mperf_monitor.c	/^static struct timespec time_start, time_end;$/;"	v	typeref:struct:	file:
+time_in_state	lib/cpufreq.h	/^	unsigned long long time_in_state;$/;"	m	struct:cpufreq_stats
+time_start	utils/idle_monitor/mperf_monitor.c	/^static struct timespec time_start, time_end;$/;"	v	typeref:struct:timespec	file:
+timediff	utils/idle_monitor/amd_fam14h_idle.c	/^static unsigned long long timediff;$/;"	v	file:
+timediff	utils/idle_monitor/cpuidle_sysfs.c	/^static unsigned long long timediff;$/;"	v	file:
+timespec_diff_us	utils/idle_monitor/cpupower-monitor.c	/^long long timespec_diff_us(struct timespec start, struct timespec end)$/;"	f
+tsc_at_measure_end	utils/idle_monitor/hsw_ext_idle.c	/^static unsigned long long tsc_at_measure_end;$/;"	v	file:
+tsc_at_measure_end	utils/idle_monitor/mperf_monitor.c	/^static unsigned long long tsc_at_measure_end;$/;"	v	file:
+tsc_at_measure_end	utils/idle_monitor/nhm_idle.c	/^static unsigned long long tsc_at_measure_end;$/;"	v	file:
+tsc_at_measure_end	utils/idle_monitor/snb_idle.c	/^static unsigned long long tsc_at_measure_end;$/;"	v	file:
+tsc_at_measure_start	utils/idle_monitor/hsw_ext_idle.c	/^static unsigned long long tsc_at_measure_start;$/;"	v	file:
+tsc_at_measure_start	utils/idle_monitor/mperf_monitor.c	/^static unsigned long long tsc_at_measure_start;$/;"	v	file:
+tsc_at_measure_start	utils/idle_monitor/nhm_idle.c	/^static unsigned long long tsc_at_measure_start;$/;"	v	file:
+tsc_at_measure_start	utils/idle_monitor/snb_idle.c	/^static unsigned long long tsc_at_measure_start;$/;"	v	file:
+unregister	utils/idle_monitor/cpupower-monitor.h	/^	void (*unregister)(void);$/;"	m	struct:cpuidle_monitor
+usage	bench/cpufreq-bench_plot.sh	/^function usage()$/;"	f
+usage	bench/main.c	/^void usage()$/;"	f
+val	utils/helpers/amd.c	/^	unsigned long long val;$/;"	m	union:msr_pstate	file:
+vendor	utils/helpers/helpers.h	/^	enum cpupower_cpu_vendor vendor;$/;"	m	struct:cpupower_cpu_info	typeref:enum:cpupower_cpu_info::cpupower_cpu_vendor
+verbose	bench/parse.h	/^	unsigned int verbose;	\/* verbose output *\/$/;"	m	struct:config
+verify_gov	lib/cpufreq.c	/^static int verify_gov(char *new_gov, char *passed_gov)$/;"	f	file:
+version	debug/i386/dump_psb.c	/^	u_char version;$/;"	m	struct:psb_header	file:
+vid	utils/helpers/amd.c	/^		unsigned vid:7;$/;"	m	struct:msr_pstate::__anon1	file:
+vid	utils/helpers/amd.c	/^		unsigned vid:8;$/;"	m	struct:msr_pstate::__anon2	file:
+vid_to_voltage	debug/i386/dump_psb.c	/^static const int vid_to_voltage[32] = {$/;"	v	file:
+wake_cpus	utils/idle_monitor/cpupower-monitor.c	/^static unsigned int wake_cpus;$/;"	v	file:
+write_msr	utils/helpers/helpers.h	/^static inline int write_msr(int cpu, unsigned int idx, unsigned long long val)$/;"	f
+write_msr	utils/helpers/msr.c	/^int write_msr(int cpu, unsigned int idx, unsigned long long val)$/;"	f

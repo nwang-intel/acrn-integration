@@ -1,0 +1,11 @@
+src/shared/libsystemd_label_la-selinux-util.lo: src/shared/selinux-util.c \
+ /usr/include/stdc-predef.h config.h src/shared/selinux-util.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+src/shared/selinux-util.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h:
